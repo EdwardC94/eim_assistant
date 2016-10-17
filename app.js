@@ -69,7 +69,7 @@
             ]
         }
         $scope.template = $scope.select.Template[0];
-        $scope.closing = $scope.select.Closing[0]
+        $scope.closing = $scope.select.Closing[0];
         $scope.data = [{"pol" : new Policy()}];
         $scope.copy = function () {
     		var referenceNode = document.querySelector("#email-response");
@@ -81,7 +81,9 @@
         };
         $scope.clear = function() {
             $scope.data.pop();
-            $scope.data.push({"pol" : new Policy()})
+            $scope.data.push({"pol" : new Policy()});
+            $scope.template = $scope.select.Template[0];
+            $scope.closing = $scope.select.Closing[0];
         };
     }])
     app.directive("inputField", function(){
