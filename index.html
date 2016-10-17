@@ -30,8 +30,9 @@
                     <div class="panel-body">
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-user"></span>
-                            <input type="password" class="form-control" data-ng-model="session.code" data-ng-click="isValid()" placeholder="Your ">
+                            <input type="password" class="form-control" data-ng-model="session.code" placeholder="Your ">
                         </div>
+                        <button class="btn btn-success" data-ng-click="isValid()">Submit</button>
                         <p style="color : red;">{{session.errorMessage}}<p>      
                     </div>
                 </div>          
