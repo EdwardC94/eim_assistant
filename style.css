@@ -48,14 +48,14 @@ span.input-group-addon {
     background-color: #9da1a3;
     color: white;
 }
-#validation-form > h3 {
-    text-align : center;
-}
 #validation-form-submit {
     display: flex;
     justify-content: center;
     margin-top: 18px;  
 }
-#validation-form p {
-    color : red;
-}
+    #validation-form  h3 {
+        text-align : center;
+    }
+    #validation-form p {
+        color : red;
+    }
