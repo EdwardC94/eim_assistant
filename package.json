@@ -1,0 +1,26 @@
+{
+  "name": "eim_assistant",
+  "version": "1.0.0",
+  "description": "A tool that allows for a more efficient way to answer emails to customers.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardC94/eim_assistant.git"
+  },
+  "keywords": [
+    "Allianz"
+  ],
+  "author": "Eduardo Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwardC94/eim_assistant/issues"
+  },
+  "homepage": "https://github.com/EdwardC94/eim_assistant#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^4.0.0-alpha.4"
+  }
+}
