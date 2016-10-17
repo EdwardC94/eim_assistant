@@ -87,6 +87,7 @@
             $scope.closing = $scope.select.Closing[0];
         };
         $scope.isNeeded = function(fieldName) {
+            console.log($scope.template.needs.findIndex(function(prop) {return prop === fieldName}) > -1)
             return $scope.template.needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         };
         $scope.isValid = function() {
