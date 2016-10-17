@@ -72,9 +72,9 @@
         $scope.closing = $scope.select.Closing[0]
         $scope.data = [{"pol" : new Policy()}];
         $scope.copy = function () {
-    		var urlField = document.querySelector("#email-response");
+    		var referenceNode = document.querySelector("#email-response");
     		var range = document.createRange();  
-    		range.selectNode(urlField);
+    		range.selectNode(referenceNode);
     		window.getSelection().addRange(range);
     		document.execCommand("copy");				
     		window.getSelection().removeAllRanges();
