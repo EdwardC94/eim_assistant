@@ -10,7 +10,8 @@
             this.pH = {"name" : "", "email" : "", "phone" : "", "address" : ""};
             this.payment = {"amount" : "", "brand" : "", "l4d" : ""};
         };
-        $scope.user = { "name" : "Edward A."};
+        $scope.users = [{ "name" : "Edward A.", "code" : "46632"}];
+        $scope.session = {"valid" : false, code : "", "errorMessage" : "", "user" : {}};
         $scope.empathy_statement = "";
         $scope.select = {
             "Template" : [
@@ -87,6 +88,16 @@
         };
         $scope.isNeeded = function(fieldName) {
             return $scope.template.needs.findIndex(function(prop) {return prop === fieldName}) > -1;
+        };
+        $scope.isValid = function() {
+            var i = $scope.users.findIndex(function (user) {return user.code === $scope.session.code })
+            if(i > -1) {
+                $scope.session.valid = true;
+                $scope.session.user = $scope.users[i]; 
+
+            }else{
+                 $scope.session.errorMessage = "Invalid code. Please try again."
+            }
         }
     }])
 })();
