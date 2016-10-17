@@ -19,7 +19,6 @@
 </head>
 <body>
     <div class="container" data-ng-controller="MainCtrl">
-
         <div class="row branding">
              <div class="col-xs-8">
                 <h2>EIM Assistant</h2>
@@ -29,7 +28,7 @@
              </div>
         </div>
 
-        <div id="validation-form" class="row" data-ng-hide="session.valid">
+        <div id="validation-form" class="row" data-ng-hide="session.valid" data-ng-cloak>
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -49,7 +48,7 @@
             </div>
         </div>
 
-        <div class="row" data-ng-show="session.valid">
+        <div class="row" data-ng-show="session.valid" data-ng-cloak>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <!--This lets you choose what type of e-mail you are answering to.-->
                 <select class="form-control btn btn-success" data-ng-options="option.name for option in select.Template track by option.templateID" data-ng-model="template"></select>
