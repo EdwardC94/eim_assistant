@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet"  type="text/css" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
 </head>
 <body>
     <div class="container" data-ng-controller="MainCtrl">
@@ -21,7 +29,7 @@
              </div>
         </div>
 
-        <div class="row" data-ng-hide="session.valid">
+        <div id="validation-form" class="row" data-ng-hide="session.valid">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -30,9 +38,11 @@
                     <div class="panel-body">
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-user"></span>
-                            <input type="password" class="form-control" data-ng-model="session.code" placeholder="Your ">
+                            <input type="password" class="form-control" data-ng-model="session.code" placeholder="Enter your ID, please">
                         </div>
-                        <button class="btn btn-success" data-ng-click="isValid()">Submit</button>
+                        <div id="validation-form-submit">
+                            <button class="btn btn-success" data-ng-click="isValid()">Submit</button>
+                        </div>
                         <p style="color : red;">{{session.errorMessage}}<p>      
                     </div>
                 </div>          
@@ -124,11 +134,5 @@
             </div>            
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
