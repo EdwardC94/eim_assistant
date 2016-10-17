@@ -13,8 +13,8 @@
         float: right;
     }
 .panel-heading {
-    background-image: linear-gradient(to bottom,#1d6e86 0,#013781 100%);
-    color: white;
+    background-image: linear-gradient(to bottom,#1d6e86 0,#013781 100%) !important;
+    color: white !important;
 }
 #response-box-title > h3 {
     float : left;
@@ -24,6 +24,24 @@
     justify-content: flex-end;
 }
 select.btn-success {
-    margin: 0.5em 0;
+    margin-bottom: 9px;
     font-size: 18px;
+}
+.panel-heading a{
+	color: white;
+}
+.input-group-addon.glyphicon {
+	top: initial;
+}
+span.glyphicon-remove:hover {
+	color: red;
+	background-color: white;
+}
+span.glyphicon-copy:hover {
+	color: green;
+	background-color: white;
+}
+span.input-group-addon {
+    background-color: #9da1a3;
+    color: white;
 }
