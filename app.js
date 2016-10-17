@@ -85,10 +85,8 @@
             $scope.template = $scope.select.Template[0];
             $scope.closing = $scope.select.Closing[0];
         };
-    }])
-    app.directive("inputField", function(){
-        return {
-            info : "="
+        $scope.isNeeded = function(fieldName) {
+            return $scope.template.needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         }
-    })
+    }])
 })();

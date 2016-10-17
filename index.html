@@ -25,47 +25,47 @@
                         <h3 class="panel-title">Information</h3> 
                     </div>
                     <div class="panel-body">
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('pN')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-book"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pN" placeholder="Policy">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('name')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-user"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.name" placeholder="Name">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('doP')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.doP" placeholder="Date of Purchase">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('depD')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.depD" placeholder="Departure Date">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('retD')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.retD" placeholder="Return Date">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('address')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-home"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.address" placeholder="Address">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('phone')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-earphone"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.phone" placeholder="Phone">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('email')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-envelope"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.email" placeholder="Email">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('amount')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-usd"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.payment.amount" placeholder="Amount refunded">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('brand')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-credit-card"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.payment.brand" placeholder="Brand">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="isNeeded('l4d')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-triangle-right"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.payment.l4d" placeholder="Last four digits">
                         </div>
