@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <!--This lets you choose what type of e-mail you are answering to.-->
-                <select class="form-control btn btn-success" ng-options="option.name for option in select.Template track by option.templateID" ng-model="queue"></select>
+                <select class="form-control btn btn-success" data-ng-options="option.name for option in select.Template track by option.templateID" data-ng-model="queue"></select>
             
                 <!--This lets you enter the information that will be displayed in the response.-->
                 <div class="panel panel-default">
@@ -24,47 +24,47 @@
                     <div class="panel-body">
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-book"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.pN" placeholder="Policy">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.pN" placeholder="Policy">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-user"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.pH.name" placeholder="Name">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.pH.name" placeholder="Name">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.doP" placeholder="Date of Purchase">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.doP" placeholder="Date of Purchase">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.depD" placeholder="Departure Date">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.depD" placeholder="Departure Date">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.retD" placeholder="Return Date">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.retD" placeholder="Return Date">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-home"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.pH.address" placeholder="Address">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.pH.address" placeholder="Address">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-earphone"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.pH.phone" placeholder="Phone">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.pH.phone" placeholder="Phone">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-envelope"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.pH.email" placeholder="Email">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.pH.email" placeholder="Email">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-usd"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.payment.amount" placeholder="Amount refunded">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.payment.amount" placeholder="Amount refunded">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-credit-card"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.payment.brand" placeholder="Brand">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.payment.brand" placeholder="Brand">
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-triangle-right"></span>
-                            <input type="text" class="form-control" ng-model="data[0].pol.payment.l4d" placeholder="Last four digits">
+                            <input type="text" class="form-control" data-ng-model="data[0].pol.payment.l4d" placeholder="Last four digits">
                         </div>
                     </div>
                 </div>
@@ -73,14 +73,14 @@
                 <div class="panel panel-default">
                     <div id="note-title" class="panel-heading">
                         <h3 class="panel-title">Note</h3>
-                        <a id="copy-button" href="#" ng-click="copy()"><span class="img-circle glyphicon glyphicon-copy"></span></a>
-                        <a id="remove-button" href="#" ng-click="clear()"><span class="img-circle glyphicon glyphicon-remove"></span></a> 
+                        <a id="copy-button" href="#" data-ng-click="copy()"><span class="img-circle glyphicon glyphicon-copy"></span></a>
+                        <a id="remove-button" href="#" data-ng-click="clear()"><span class="img-circle glyphicon glyphicon-remove"></span></a> 
                     </div>
                     <div id="note-content" class="panel-body">
                         <p>Dear {{data[0].pol.pH.name}}</p>
                         <p>Policy {{data[0].pol.pN}}</p>
                         <div class="response-body" data-ng-include="template.url"></div>
-                        <div class="response-closing" data-ng-include="closing.html"></div>
+                        <div class="response-closing" data-ng-include="partials/closing.html"></div>
                     </div>
                 </div>
             </div>
