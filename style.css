@@ -1,0 +1,29 @@
+.branding {
+    background-color : #013781;
+    color : white;
+    margin-bottom : 20px;
+    background-clip : content-box;
+}
+    .branding > .col-xs-4 {
+        padding-top : 21px;
+        height : 20px;
+    }
+    .branding img {        
+        width: 103.328px;
+        float: right;
+    }
+.panel-heading {
+    background-image: linear-gradient(to bottom,#1d6e86 0,#013781 100%);
+    color: white;
+}
+#response-box-title > h3 {
+    float : left;
+}
+#response-box-title > div {
+    display: flex;
+    justify-content: flex-end;
+}
+select.btn-success {
+    margin: 0.5em 0;
+    font-size: 18px;
+}

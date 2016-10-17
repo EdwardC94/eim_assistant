@@ -11,8 +11,18 @@
 </head>
 <body>
     <div class="container" data-ng-controller="MainCtrl">
+
+        <div class="row branding">
+             <div class="col-xs-8">
+                <h2>EIM Assistant</h2>
+             </div>
+             <div class="col-xs-4">
+                <img src="http://www.allianzworldwidepartners.ro/corporate/images/logo-4.png">
+             </div>
+        </div>
+
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-md-6">
                 <!--This lets you choose what type of e-mail you are answering to.-->
                 <select class="form-control btn btn-success" data-ng-options="option.name for option in select.Template track by option.templateID" data-ng-model="template"></select>
 
@@ -75,19 +85,22 @@
                         </div>
                     </div>
                 </div>
-
-                <!--This lets you see the response, and has the control for copying it, and deleting it.-->
-                <div class="panel panel-default">
-                    <div id="note-title" class="panel-heading">
-                        <h3 class="panel-title">Note</h3>
-                        <a id="copy-button" href="#" data-ng-click="copy()"><span class="img-circle glyphicon glyphicon-copy"></span></a>
-                        <a id="remove-button" href="#" data-ng-click="clear()"><span class="img-circle glyphicon glyphicon-remove"></span></a> 
-                    </div>
-                    <div id="email-response" class="panel-body">
-                        <p>Dear {{data[0].pol.pH.name}}</p>
-                        <p>Policy {{data[0].pol.pN}}</p>
-                        <div class="response-body" data-ng-include="template.url"></div>
-                        <div class="response-closing" data-ng-include="'partials/closing.html'"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <!--This lets you see the response, and has the control for copying it, and deleting it.-->
+                    <div class="panel panel-default">
+                        <div id="response-box-title" class="panel-heading">
+                            <h3 class="panel-title">Note</h3>
+                            <div><a id="copy-button" href="#" data-ng-click="copy()"><span class="img-circle glyphicon glyphicon-copy"></span></a>
+                            <a id="remove-button" href="#" data-ng-click="clear()"><span class="img-circle glyphicon glyphicon-remove"></span></a> 
+                        </div>
+                        <div id="email-response" class="panel-body">
+                            <p>Dear {{data[0].pol.pH.name}}</p>
+                            <p>Policy {{data[0].pol.pN}}</p>
+                            <div class="response-body" data-ng-include="template.url"></div>
+                            <div class="response-closing" data-ng-include="'partials/closing.html'"></div>
+                        </div>
                     </div>
                 </div>
             </div>
