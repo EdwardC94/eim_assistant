@@ -2,3 +2,5 @@
 typings/
 #node modules
 node_modules/
+#glyphicons
+glyphicons/

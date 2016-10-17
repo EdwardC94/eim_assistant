@@ -1,18 +1,96 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="EIM_Assistant">
-  <head>
+<html lang="en" data-ng-app="EIM_Assistant">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-  </head>
-  <body>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container" data-ng-controller="MainCtrl">
+        <div class="row">
+            <div class="col-xs-12">
+                <!--This lets you choose what type of e-mail you are answering to.-->
+                <select class="form-control btn btn-success" ng-options="option.name for option in select.queue track by option.id" ng-model="queue"></select>
+            
+                <!--This lets you enter the information that will be displayed in the response.-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3> 
+                    </div>
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-book"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.pN" placeholder="Policy">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-user"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.pH.name" placeholder="Name">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.doP" placeholder="Date of Purchase">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.depD" placeholder="Departure Date">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.retD" placeholder="Return Date">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-home"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.pH.address" placeholder="Address">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-earphone"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.pH.phone" placeholder="Phone">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.pH.email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-usd"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.payment.amount" placeholder="Amount refunded">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-credit-card"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.payment.brand" placeholder="Brand">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-triangle-right"></span>
+                            <input type="text" class="form-control" ng-model="data[0].pol.payment.l4d" placeholder="Last four digits">
+                        </div>
+                    </div>
+                </div>
+
+                <!--This lets you see the response, and has the control for copying it, and deleting it.-->
+                <div class="panel panel-default">
+                    <div id="note-title" class="panel-heading">
+                        <h3 class="panel-title">Note</h3>
+                        <a id="copy-button" href="#" ng-click="copy()"><span class="img-circle glyphicon glyphicon-copy"></span></a>
+                        <a id="remove-button" href="#" ng-click="clear()"><span class="img-circle glyphicon glyphicon-remove"></span></a> 
+                    </div>
+                    <div id="note-content" class="panel-body">
+                        <p>Dear {{data[0].pol.pH.name}}</p>
+                        <p>Policy {{data[0].pol.pN}}</p>
+                        <div class="response-body" data-ng-include="template.url"></div>
+                        <div class="response-closing" data-ng-include="closing.html"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>
-  </body>
+    <script type="text/javascript" src="app.js"></script>
+</body>
 </html>
