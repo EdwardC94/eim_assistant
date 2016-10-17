@@ -16,7 +16,7 @@
             'Template' : [
                 { 'templateID' : 1, 'name' : 'Travel Gral. Info', 'needs' : ["pn", "name", "email"], "url" : "travel-gral-info.html" },
                 { 'templateID' : 2, 'name' : 'ETP Gral. Info', 'needs' : ["pn", "name"], "url" : "etp-gral-info.html" },
-                { 'templateID' : 3, 'name' : 'ERP Gral. Info', 'needs' : ["pn", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "erp-gral-info.html" },
+                { 'templateID' : 3, 'name' : 'ERP Gral. Info', 'needs' : ["pn", "name"], "url" : "erp-gral-info.html" },
                 { 'templateID' : 4, 'name' : 'CDW Benefits', 'needs' : ["pn", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "cdw-benefits.html" },
                 { 'templateID' : 5, 'name' : 'Not Covered', 'needs' : ["pn", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "not-covered.html" },
                 { 'templateID' : 6, 'name' : 'Unintended Purchase ETP', 'needs' : ["pn", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "unintended-purchase-etp.html" },
@@ -68,7 +68,7 @@
                 { 'closingID' : 21, 'name' : 'B2C', 'phone' : '(866) 884-3556', 'e-mail' : 'customerservice@allianzassistance.com'}
             ]
         }
-        $scope.template = $scope.select.template[0];
+        $scope.template = $scope.select.Template[0];
         $scope.data = [{'pol' : new Policy()}];
         $scope.copy = function () {
     		var urlField = document.querySelector('#email-response');
