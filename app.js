@@ -97,6 +97,7 @@
 
             }else{
                  $scope.session.errorMessage = "Invalid code. Please try again."
+                 $scope.session.code = "";
             }
         }
     }])

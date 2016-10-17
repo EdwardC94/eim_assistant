@@ -57,5 +57,7 @@ span.input-group-addon {
         text-align : center;
     }
     #validation-form p {
-        color : red;
+        color: red;
+        text-align: center;
+        margin-top: 9px;
     }
