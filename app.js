@@ -88,7 +88,7 @@
         };
         $scope.isNeeded = function(fieldName) {
             console.log($scope.template.needs.findIndex(function(prop) {return prop === fieldName}) > -1)
-            console.log($scope.template.needs + " and " + fieldname);
+            console.log($scope.template.needs + " and " + fieldName);
             return $scope.template.needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         };
         $scope.isValid = function() {
