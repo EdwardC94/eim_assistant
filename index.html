@@ -94,7 +94,7 @@
                             <span class="input-group-addon glyphicon glyphicon-envelope"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.email" placeholder="Email">
                         </div>
-                        <div class="input-group">
+                        <div data-ng-show="amount" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-usd"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.payment.amount" placeholder="Amount refunded">
                         </div>
