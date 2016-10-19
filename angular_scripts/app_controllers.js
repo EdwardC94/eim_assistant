@@ -14,7 +14,7 @@
     };
 
     angular.module('EIMCtrls', []).
-    controller("MainCtrl", ["$scope", "selectData", function($scope, selectData) {        
+    controller("MainCtrl", ["$scope", "myData", function($scope, myData) {        
         
         /*$scope.select = selectData;*/
         $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
