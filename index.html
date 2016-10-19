@@ -57,10 +57,10 @@
         <div class="row" data-ng-if="session.valid" data-ng-cloak>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <!--This lets you choose what type of e-mail you are answering to.-->
-                <select class="form-control btn btn-success" data-ng-options="option.name for option in select.Template track by option.templateID" data-ng-model="template"></select>
+                <select class="form-control btn btn-success" data-ng-options="option.name for option in select.Template track by option.templateID" data-ng-model="data.message.template"></select>
 
                 <!--This lets you select the right closing-->
-                <select class="form-control btn btn-success" data-ng-options="option.name for option in select.Closing track by option.closingID" data-ng-model="closing"></select>
+                <select class="form-control btn btn-success" data-ng-options="option.name for option in select.Closing track by option.closingID" data-ng-model="data.message.closing"></select>
             
                 <!--This lets you enter the information that will be displayed in the response.-->
                 <div class="panel panel-default">
@@ -68,53 +68,53 @@
                         <h3 class="panel-title">Information</h3> 
                     </div>
                     <div class="panel-body">
-                        <div ng-show="isNeeded('pN', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('pN')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-book"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.pN" placeholder="Policy">
+                            <input type="text" class="form-control" data-ng-model="data.pol.pN" placeholder="Policy">
                         </div>
-                        <div ng-show="isNeeded('name', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('name')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-user"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.pH.name" placeholder="Name">
+                            <input type="text" class="form-control" data-ng-model="data.pol.pH.name" placeholder="Name">
                         </div>
-                        <div ng-show="isNeeded('doP', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('doP')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.doP" placeholder="Date of Purchase">
+                            <input type="text" class="form-control" data-ng-model="data.pol.doP" placeholder="Date of Purchase">
                         </div>
-                        <div ng-show="isNeeded('depD', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('depD')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.depD" placeholder="Departure Date">
+                            <input type="text" class="form-control" data-ng-model="data.pol.depD" placeholder="Departure Date">
                         </div>
-                        <div ng-show="isNeeded('retD', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('retD')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.retD" placeholder="Return Date">
+                            <input type="text" class="form-control" data-ng-model="data.pol.retD" placeholder="Return Date">
                         </div>
-                        <div ng-show="isNeeded('address', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('address')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-home"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.pH.address" placeholder="Address">
+                            <input type="text" class="form-control" data-ng-model="data.pol.pH.address" placeholder="Address">
                         </div>
-                        <div ng-show="isNeeded('phone', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('phone')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-earphone"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.pH.phone" placeholder="Phone">
+                            <input type="text" class="form-control" data-ng-model="data.pol.pH.phone" placeholder="Phone">
                         </div>
-                        <div ng-show="isNeeded('email', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('email')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-envelope"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.pH.email" placeholder="Email">
+                            <input type="text" class="form-control" data-ng-model="data.pol.pH.email" placeholder="Email">
                         </div>
-                        <div ng-show="isNeeded('amount', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('amount')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-usd"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.payment.amount" placeholder="Amount refunded">
+                            <input type="text" class="form-control" data-ng-model="data.pol.payment.amount" placeholder="Amount refunded">
                         </div>
-                        <div ng-show="isNeeded('brand', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('brand')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-credit-card"></span>
-                            <input type="text" class="form-control" data-ng-model="data[0].pol.payment.brand" placeholder="Brand">
+                            <input type="text" class="form-control" data-ng-model="data.pol.payment.brand" placeholder="Brand">
                         </div>
-                        <div ng-show="isNeeded('l4d', template.needs)" class="input-group">
+                        <div ng-show="isNeeded('l4d')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-triangle-right"></span>
-                            <input type="number" class="form-control" data-ng-model="data[0].pol.payment.l4d" placeholder="Last four digits">
+                            <input type="number" class="form-control" data-ng-model="data.pol.payment.l4d" placeholder="Last four digits">
                         </div>
                         <div id="mod-emp-stat" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-heart"></span>
-                            <input type="text" class="form-control" data-ng-model="empathy_statement" placeholder="Modify the empathy statement">
+                            <input type="text" class="form-control" data-ng-model="data.message.empathy_statement" placeholder="Modify the empathy statement">
                         </div>
                     </div>
                 </div>
@@ -130,9 +130,9 @@
                         </div>
                     </div>
                     <div id="email-response" class="panel-body">
-                        <p>Dear {{toTitleCase(data[0].pol.pH.name)}}</p>
-                        <p>Policy {{data[0].pol.pN}}</p>
-                        <div class="response-body" data-ng-include="template.url"></div>
+                        <p>Dear {{toTitleCase(data.pol.pH.name)}}</p>
+                        <p>Policy {{data.pol.pN}}</p>
+                        <div class="response-body" data-ng-include="data.message.template.url"></div>
                         <div class="response-closing" data-ng-include="'partials/closing.html'"></div>
                     </div>
                 </div>
