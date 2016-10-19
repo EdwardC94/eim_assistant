@@ -14,7 +14,7 @@
     };
 
     angular.module('EIMCtrls', ['ngRoute']).
-    controller("MainCtrl", ['$scope', function($scope) {
+    controller("MainCtrl", ['$scope', 'data', function($scope, data) {
         console.log(myData);
         console.log(myData.Closing[0]);
         $scope.select = myData;
