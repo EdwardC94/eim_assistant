@@ -83,7 +83,7 @@
         $scope.clear = function() {
             $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
         };
-        $scope.isNeeded = function(fieldName, needs) {
+        $scope.isNeeded = function(fieldName) {
             var needs  = $scope.data.message.template.needs;
             return needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         };
