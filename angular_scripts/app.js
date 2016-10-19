@@ -7,7 +7,7 @@
             templateUrl : 'partials/home.html',
             controller : 'MainCtrl',
             resolve : {
-                selectData : ['getData', '$q', function (getData, $q) {
+                myData : ['getData', '$q', function (getData, $q) {
                     var deferred = $q.defer();
                     var success = function (result) {
                         deferred.resolve(result);
