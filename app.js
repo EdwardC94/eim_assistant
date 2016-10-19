@@ -10,6 +10,11 @@
             this.pH = {"name" : "", "email" : "", "phone" : "", "address" : ""};
             this.payment = {"amount" : "", "brand" : "", "l4d" : ""};
         };
+        function Reply(template, closing, empathy_statement) {
+            this.template = template;
+            this.closing = closing;
+            this.empathy_statement = empathy_statement;
+        };
         $scope.select = {
             "Template" : [
                 { "templateID" : 1, "name" : "Travel Gral. Info", "needs" : ["pN", "name", "email"], "url" : "partials/travel-gral-info.html" },
@@ -66,10 +71,7 @@
                 { "closingID" : 21, "name" : "B2C", "phone" : "(866) 884-3556", "email" : "customerservice@allianzassistance.com"}
             ]
         };
-        $scope.data = [{"pol" : new Policy()}];
-        $scope.empathy_statement = "";
-        $scope.template = $scope.select.Template[0];
-        $scope.closing = $scope.select.Closing[0];
+        $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
         $scope.copy = function () {
     		var referenceNode = document.querySelector("#email-response");
     		var range = document.createRange();  
@@ -79,13 +81,10 @@
     		window.getSelection().removeAllRanges();
         };
         $scope.clear = function() {
-            $scope.data.pop();
-            $scope.data.push({"pol" : new Policy()});
-            $scope.empathy_statement = "";
-            $scope.template = $scope.select.Template[0];
-            $scope.closing = $scope.select.Closing[0];
+            $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
         };
         $scope.isNeeded = function(fieldName, needs) {
+            var needs  = $scope.data.message.template.needs;
             return needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         };
         /*Logic for sessions BEGINS*/
