@@ -21,6 +21,7 @@
   "homepage": "https://github.com/EdwardC94/eim_assistant#readme",
   "dependencies": {
     "angular": "^1.5.8",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jquery": "file:jquery"
   }
 }

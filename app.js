@@ -2,7 +2,7 @@
     var app = angular.module("EIM_Assistant", []);
 
     app.controller("MainCtrl", ["$scope", function($scope) {        
-        function Policy(pN, doP, depD, retD, pH, payment, cancellation, inquiry) {
+        function Policy() {
             this.pN = "";
             this.doP = "";
             this.depD = "";
@@ -10,9 +10,6 @@
             this.pH = {"name" : "", "email" : "", "phone" : "", "address" : ""};
             this.payment = {"amount" : "", "brand" : "", "l4d" : ""};
         };
-        $scope.users = [{ "name" : "Edward A.", "code" : "46632"}];
-        $scope.session = {"valid" : false, code : "", "errorMessage" : "", "user" : {}};
-        $scope.empathy_statement = "";
         $scope.select = {
             "Template" : [
                 { "templateID" : 1, "name" : "Travel Gral. Info", "needs" : ["pN", "name", "email"], "url" : "partials/travel-gral-info.html" },
@@ -68,10 +65,11 @@
                 { "closingID" : 20, "name" : "PriceLine", "phone" : "(888) 769-6105", "email" : "customerservice@allianzassistance.com"},
                 { "closingID" : 21, "name" : "B2C", "phone" : "(866) 884-3556", "email" : "customerservice@allianzassistance.com"}
             ]
-        }
+        };
+        $scope.data = [{"pol" : new Policy()}];
+        $scope.empathy_statement = "";
         $scope.template = $scope.select.Template[0];
         $scope.closing = $scope.select.Closing[0];
-        $scope.data = [{"pol" : new Policy()}];
         $scope.copy = function () {
     		var referenceNode = document.querySelector("#email-response");
     		var range = document.createRange();  
@@ -85,22 +83,27 @@
             $scope.data.push({"pol" : new Policy()});
             $scope.template = $scope.select.Template[0];
             $scope.closing = $scope.select.Closing[0];
+            $scope.empathy_statement = "";
         };
-        $scope.isNeeded = function(fieldName) {
-            console.log($scope.template.needs.findIndex(function(prop) {return prop === fieldName}) > -1)
-            console.log($scope.template.needs + " and " + $scope.template.templateID + " and " + fieldName);
-            return $scope.template.needs.findIndex(function(prop) {return prop === fieldName}) > -1;
+        $scope.isNeeded = function(fieldName, needs) {
+            return needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         };
-        $scope.isValid = function() {
-            var i = $scope.users.findIndex(function (user) {return user.code === $scope.session.code })
-            if(i > -1) {
-                $scope.session.valid = true;
-                $scope.session.user = $scope.users[i]; 
+        /*Logic for sessions*/
+        $scope.users = [{ "name" : "Edward A.", "code" : "46632"}];
+        $scope.session = {"valid" : false, code : "", "errorMessage" : "", "user" : {}};
+        $scope.isValid = function(keyPressed) {
+            if(keyPressed === 13) {
+                var i = $scope.users.findIndex(function (user) {return user.code === $scope.session.code })
+                if(i > -1) {
+                    $scope.session.valid = true;
+                    $scope.session.user = $scope.users[i]; 
 
-            }else{
-                 $scope.session.errorMessage = "Invalid code. Please try again."
-                 $scope.session.code = "";
+                }else{
+                    $scope.session.errorMessage = "Invalid code. Please try again."
+                    $scope.session.code = "";
+                }
             }
         }
+        /*Logic for sessions*/
     }])
 })();

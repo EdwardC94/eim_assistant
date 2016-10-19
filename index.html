@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>E IM Assistant</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet"  type="text/css" href="style.css">
@@ -12,19 +13,24 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <!-- For offline stuff
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap-theme.min.css">
+    <script type="text/javascript" src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules\angular\angular.min.js"></script>
+    -->
 
 </head>
 <body>
     <div class="container" data-ng-controller="MainCtrl">
         <div class="row branding">
              <div class="col-xs-8">
-                <h2>EIM Assistant</h2>
+                <h2>E IM Assistant</h2>
              </div>
              <div class="col-xs-4">
-                <img src="http://www.allianzworldwidepartners.ro/corporate/images/logo-4.png">
+                <img src="images/brand-logo.png">
              </div>
         </div>
 
@@ -37,11 +43,11 @@
                     <div class="panel-body">
                         <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-user"></span>
-                            <input type="password" class="form-control" data-ng-model="session.code" placeholder="Enter your ID, please">
+                            <input type="text" class="form-control" data-ng-model="session.code" placeholder="Enter your ID, please" ng-keyup="isValid($event.keyCode)">
                         </div>
                         <p>{{session.errorMessage}}<p>
                         <div id="validation-form-submit">
-                            <button class="btn btn-success" data-ng-click="isValid()">Submit</button>
+                            <button class="btn btn-success" data-ng-click="isValid(13)">Submit</button>
                         </div>      
                     </div>
                 </div>          
@@ -62,47 +68,47 @@
                         <h3 class="panel-title">Information</h3> 
                     </div>
                     <div class="panel-body">
-                        <div class="input-group">
+                        <div ng-show="isNeeded('pN', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-book"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pN" placeholder="Policy">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('name', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-user"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.name" placeholder="Name">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('doP', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.doP" placeholder="Date of Purchase">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('depD', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.depD" placeholder="Departure Date">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('retD', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.retD" placeholder="Return Date">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('address', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-home"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.address" placeholder="Address">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('phone', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-earphone"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.phone" placeholder="Phone">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('email', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-envelope"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.pH.email" placeholder="Email">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('amount', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-usd"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.payment.amount" placeholder="Amount refunded">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('brand', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-credit-card"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.payment.brand" placeholder="Brand">
                         </div>
-                        <div class="input-group">
+                        <div ng-show="isNeeded('l4d', template.needs)" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-triangle-right"></span>
                             <input type="text" class="form-control" data-ng-model="data[0].pol.payment.l4d" placeholder="Last four digits">
                         </div>
