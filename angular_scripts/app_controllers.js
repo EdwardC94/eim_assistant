@@ -13,7 +13,7 @@
         this.empathy_statement = empathy_statement;
     };
 
-    angular.module('EIMCtrls', []).
+    angular.module('EIMCtrls', ['ngRoute']).
     controller("MainCtrl", ["$scope", "myData", function($scope, myData) {        
         
         $scope.select = myData;
