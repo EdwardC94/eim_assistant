@@ -1,5 +1,4 @@
-(function () {
-
+(function (){
     function Policy() {
         this.pN = "";
         this.doP = "";
@@ -14,44 +13,18 @@
         this.empathy_statement = empathy_statement;
     };
 
-    var app = angular.module("EIM_Assistant", ['ngResource', 'ngRoute']);
-
-    app.factory('getData', ['$resource', function ($resource) {
-        return $resource('database/eim_data.json', {}, {
-            getData : { method : 'GET', params : {}, isArray : false }
-        })
-    }])
-
-    app.config(['$routeProvider', function($routeProvider) {
-        $routeProvider.
-        when('/home', {
-            templateUrl : 'partials/home.html',
-            controller : 'MainCtrl',
-            resolve : {
-                selectData : ['getData', '$q', function (getData, $q) {
-                    var deferred = $q.defer();
-                    var success = function (result) {
-                        deferred.resolve(result);
-                    };
-                    getData.getData({}, success, success);
-                    return deferred.promise;
-                }]
-            }
-        }).
-        otherwise("/home")
-    }])    
-
-    app.controller("MainCtrl", ["$scope", "selectData", function($scope, selectData) {        
+    angular.module('EIMCtrls', []).
+    controller("MainCtrl", ["$scope", "selectData", function($scope, selectData) {        
         
         $scope.select = selectData;
         $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
         $scope.copy = function () {
-    		var referenceNode = document.querySelector("#email-response");
-    		var range = document.createRange();  
-    		range.selectNode(referenceNode);
-    		window.getSelection().addRange(range);
-    		document.execCommand("copy");				
-    		window.getSelection().removeAllRanges();
+            var referenceNode = document.querySelector("#email-response");
+            var range = document.createRange();  
+            range.selectNode(referenceNode);
+            window.getSelection().addRange(range);
+            document.execCommand("copy");				
+            window.getSelection().removeAllRanges();
         };
         $scope.clear = function() {
             $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
