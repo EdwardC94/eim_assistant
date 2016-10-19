@@ -81,14 +81,14 @@
         $scope.clear = function() {
             $scope.data.pop();
             $scope.data.push({"pol" : new Policy()});
+            $scope.empathy_statement = "";
             $scope.template = $scope.select.Template[0];
             $scope.closing = $scope.select.Closing[0];
-            $scope.empathy_statement = "";
         };
         $scope.isNeeded = function(fieldName, needs) {
             return needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         };
-        /*Logic for sessions*/
+        /*Logic for sessions BEGINS*/
         $scope.users = [{ "name" : "Edward A.", "code" : "46632"}];
         $scope.session = {"valid" : false, code : "", "errorMessage" : "", "user" : {}};
         $scope.isValid = function(keyPressed) {
@@ -104,6 +104,13 @@
                 }
             }
         }
-        /*Logic for sessions*/
+        /*Logic for sessions ENDS*/
+        $scope.toTitleCase = function (str) {
+            if(str !== '') {
+                return str === 'MASTERCARD' ? 'MasterCard' : str.toLowerCase().split(' ').map(function (i) {
+                    return i[0].toUpperCase() + i.substring(1);
+                }).join(' ');
+            }
+        }
     }])
 })();
