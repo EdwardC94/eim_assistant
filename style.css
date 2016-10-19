@@ -61,3 +61,7 @@ span.input-group-addon {
         text-align: center;
         margin-top: 9px;
     }
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
