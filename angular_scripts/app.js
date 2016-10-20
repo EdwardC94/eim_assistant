@@ -17,6 +17,7 @@
                     return deferred.promise;
                 }]
             }
-        })
+        }).
+        otherwise('/home');
     }]);
 })();
