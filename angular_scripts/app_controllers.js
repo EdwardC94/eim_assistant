@@ -15,8 +15,6 @@
 
     angular.module('EIMCtrls', ['ngRoute']).
     controller("MainCtrl", ['$scope', 'data', function($scope, data) {
-        console.log(data);
-        console.log(data.Closing[0]);
         $scope.select = data;
         $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
         $scope.copy = function () {

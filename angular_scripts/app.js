@@ -13,7 +13,6 @@
                         deferred.resolve(result);
                     };
                     getData.getData({}, success, success);
-                    console.log("OK")
                     return deferred.promise;
                 }]
             }
