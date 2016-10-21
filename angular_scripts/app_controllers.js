@@ -21,9 +21,9 @@
             var referenceNode = document.querySelector("#email-response");
             var range = document.createRange();  
             range.selectNode(referenceNode);
-            window.getSelection().addRange(range);
+            window.getSelection().removeAllRanges().addRange(range);
             document.execCommand("copy");				
-            window.getSelection().removeAllRanges();
+            /*window.getSelection().removeAllRanges();*/
         };
         $scope.clear = function() {
             $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
