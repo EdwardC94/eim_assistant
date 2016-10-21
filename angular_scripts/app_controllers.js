@@ -24,7 +24,7 @@
             window.getSelection().removeAllRanges()
             window.getSelection().addRange(range);
             document.execCommand("copy");				
-            /*window.getSelection().removeAllRanges();*/
+            window.getSelection().removeAllRanges();
         };
         $scope.clear = function() {
             $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
