@@ -18,6 +18,15 @@ body {
 .panel-heading {
     background-image: linear-gradient(to bottom,#1d6e86 0,#013781 100%) !important;
     color: white !important;
+}    
+    .panel-heading a{
+        color: white;
+    }
+select.panel-heading {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #9ea2a3;
 }
 #response-box-title > h3 {
     float : left;
@@ -25,13 +34,6 @@ body {
 #response-box-title > div {
     display: flex;
     justify-content: flex-end;
-}
-select.btn-success {
-    margin-bottom: 9px;
-    font-size: 18px;
-}
-.panel-heading a{
-	color: white;
 }
 .input-group-addon.glyphicon {
 	top: initial;
