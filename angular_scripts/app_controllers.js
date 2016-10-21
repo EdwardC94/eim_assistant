@@ -21,7 +21,8 @@
             var referenceNode = document.querySelector("#email-response");
             var range = document.createRange();  
             range.selectNode(referenceNode);
-            window.getSelection().removeAllRanges().addRange(range);
+            window.getSelection().removeAllRanges()
+            window.getSelection().addRange(range);
             document.execCommand("copy");				
             /*window.getSelection().removeAllRanges();*/
         };
