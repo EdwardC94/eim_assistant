@@ -29,7 +29,8 @@
         { "templateID" : 27, "name" : "Change Request TAS", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/change-request-tas.html" },                
         { "templateID" : 28, "name" : "Add Driver", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/add-driver.html" },                
         { "templateID" : 29, "name" : "Agent Services", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/agent-services.html" },                
-        { "templateID" : 30, "name" : "Rejected - CC", "needs" : ["pN", "name"], "url" : "email-templates/rejected-cc.html" }
+        { "templateID" : 30, "name" : "Rejected - CC", "needs" : ["pN", "name"], "url" : "email-templates/rejected-cc.html" },
+        { "templateID" : 31, "name" : "FNOL - ETP", "needs" : ["pN", "name"], "url" : "email-templates/fnol-etp.html" }
         ],
     "Closing" : [
         { "closingID" : 1, "name" : "ETP/ERP Customer Service", "phone" : "(866) 456-3102", "email" : "eventservice@allianzassistance.com"},
