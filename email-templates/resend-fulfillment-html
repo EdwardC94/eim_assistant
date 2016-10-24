@@ -1,0 +1,3 @@
+<p>Thank you for contacting Allianz Global Assistance. Please accept our apology for any frustrations regarding accessing your policy information but it is my pleasure to assist you today.</p>
+
+<p>We have resent your letter of confirmation and policy to your email address of {{$parent.data.pol.pH.email}}, please be sure to also verify within your spam folder as sometimes our emails can be filtered as such. If you would like to have the policy faxed, please call us at the telephone number below to provide us a fax number.</p>
