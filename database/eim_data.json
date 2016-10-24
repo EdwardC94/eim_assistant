@@ -12,7 +12,7 @@
         { "templateID" : 10, "name" : "Ten-Day SG Travel", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/ten-day-sg-etp-travel.html" },                
         { "templateID" : 11, "name" : "Duplicate", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/duplicate.html" },                
         { "templateID" : 12, "name" : "CDW Cancelation", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/cdw-cancelation.html" },                
-        { "templateID" : 13, "name" : "No Action Specified", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/no-action-specified.html" },                
+        { "templateID" : 13, "name" : "No Action Specified", "needs" : ["pN", "name"], "url" : "email-templates/no-action-specified.html" },                
         { "templateID" : 14, "name" : "Pre-existing", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/pre-existing.html" },                
         { "templateID" : 15, "name" : "Already Canceled", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/already-canceled.html" },                
         { "templateID" : 16, "name" : "Confirm Cancelation", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/confirm-cancelation.html" },                
