@@ -32,7 +32,7 @@
         { "templateID" : 30, "name" : "Rejected - CC", "needs" : ["pN", "name"], "url" : "email-templates/rejected-cc.html" },
         { "templateID" : 31, "name" : "Resend Fulfillment", "needs" : ["pN", "name", "email"], "url" : "email-templates/resend-fulfillment-html" },
         { "templateID" : 32, "name" : "FNOL - ETP", "needs" : ["pN", "name"], "url" : "email-templates/fnol-etp.html" },
-        { "templateID" : 33, "name" : "FNOL - TAO", "needs" : ["pN", "name"], "url" : "email-templates/resend-fulfillment-html" }
+        { "templateID" : 33, "name" : "FNOL - TAO", "needs" : ["pN", "name"], "url" : "email-templates/fnol-tao.html" }
         ],
     "Closing" : [
         { "closingID" : 1, "name" : "ETP/ERP Customer Service", "phone" : "(866) 456-3102", "email" : "eventservice@allianzassistance.com", "urlForClaims" : ""},
