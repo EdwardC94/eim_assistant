@@ -104,8 +104,8 @@
                     </div>
                 </div>
                 <div id="email-response" class="panel-body">
-                    <p>Dear {{toTitleCase(data.pol.pH.name)}}</p>
-                    <p>Policy {{data.pol.pN}}</p>
+                    <p>Dear <span data-ng-show="data.pol.pH.name">{{toTitleCase(data.pol.pH.name)}}</span><span data-ng-hide="data.pol.pH.name">Valued Customer</span></p>
+                    <p data-ng-show="data.pol.pN">Policy {{data.pol.pN}}</p>
                     <div class="response-body" data-ng-include="data.message.template.url"></div>
                     <div class="response-closing" data-ng-include="'partials/closing.html'"></div>
                 </div>
