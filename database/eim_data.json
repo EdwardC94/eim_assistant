@@ -32,7 +32,8 @@
         { "templateID" : 30, "name" : "Rejected - CC", "needs" : ["pN", "name"], "url" : "email-templates/rejected-cc.html" },
         { "templateID" : 31, "name" : "Resend Fulfillment", "needs" : ["pN", "name", "email"], "url" : "email-templates/resend-fulfillment-html" },
         { "templateID" : 32, "name" : "FNOL - ETP", "needs" : ["pN", "name"], "url" : "email-templates/fnol-etp.html" },
-        { "templateID" : 33, "name" : "FNOL - TAO", "needs" : ["pN", "name"], "url" : "email-templates/fnol-tao.html" }
+        { "templateID" : 33, "name" : "FNOL - TAO", "needs" : ["pN", "name"], "url" : "email-templates/fnol-tao.html" },
+        { "templateID" : 34, "name" : "Cancelled by Customer", "needs" : ["pN", "name", "amount"], "url" : "email-templates/cancelled-by-customer.html" }        
         ],
     "Closing" : [
         { "closingID" : 1, "name" : "ETP/ERP Customer Service", "phone" : "(866) 456-3102", "email" : "eventservice@allianzassistance.com", "urlForClaims" : ""},
@@ -55,6 +56,6 @@
         { "closingID" : 18, "name" : "Car Trawler", "phone" : "(800) 284-8300", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
         { "closingID" : 19, "name" : "Silver Airways", "phone" : "(866) 680-9832", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
         { "closingID" : 20, "name" : "PriceLine", "phone" : "(888) 769-6105", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
-        { "closingID" : 21, "name" : "B2C", "phone" : "(866) 884-3556", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.allianztravelinsurance.com"}
+        { "closingID" : 21, "name" : "B2C", "phone" : "(866) 884-3556", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.allianztravelinsurance.com"}       
     ]
 }
