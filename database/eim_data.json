@@ -56,6 +56,7 @@
         { "closingID" : 18, "name" : "Car Trawler", "phone" : "(800) 284-8300", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
         { "closingID" : 19, "name" : "Silver Airways", "phone" : "(866) 680-9832", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
         { "closingID" : 20, "name" : "PriceLine", "phone" : "(888) 769-6105", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
-        { "closingID" : 21, "name" : "B2C", "phone" : "(866) 884-3556", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.allianztravelinsurance.com"}       
+        { "closingID" : 21, "name" : "B2C", "phone" : "(866) 884-3556", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.allianztravelinsurance.com"},
+        { "closingID" : 22, "name" : "CarRentals.com", "phone" : "(877) 413-2788", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "http://www.etravelprotection.com/CarRentals/"}       
     ]
 }
