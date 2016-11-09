@@ -34,7 +34,7 @@
             return needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         };
         /*Logic for sessions BEGINS*/
-        $scope.users = [{ "name" : "Edward A.", "code" : "46632"}];
+        $scope.users = [{ "name" : "Edward A.", "code" : "46632"}, { "name" : "Anuar S.", "code" : "46720" }];
         $scope.session = {"valid" : false, code : "", "errorMessage" : "", "user" : {}};
         $scope.isValid = function(keyPressed) {
             if(keyPressed === 13) {
