@@ -33,7 +33,20 @@
             var needs  = $scope.data.message.template.needs;
             return needs.findIndex(function(prop) {return prop === fieldName}) > -1;
         };
-        /*Logic for sessions BEGINS*/
+        /* Small modification on sessions logic*/
+        $scope.session = {"valid" : false, "errorMessage" : "", "user" : ""};
+        $scope.isValid = function(keyPressed) {
+            if(keyPressed === 13) {
+                if($scope.session.user.length > 0) {
+                    $scope.session.valid = true; 
+                }else{
+                    $scope.session.errorMessage = "Name field cannot be empty";
+                    $scope.session.user = "";
+                }
+            }
+        }
+        /*ENDS*/
+        /*Logic for sessions BEGINS
         $scope.users = [{ "name" : "Edward A.", "code" : "46632"}, { "name" : "Anuar S.", "code" : "46470" }];
         $scope.session = {"valid" : false, code : "", "errorMessage" : "", "user" : {}};
         $scope.isValid = function(keyPressed) {
@@ -49,7 +62,7 @@
                 }
             }
         }
-        /*Logic for sessions ENDS*/
+        Logic for sessions ENDS*/
         $scope.toTitleCase = function (str) {
             if(str !== '') {
                 return str === 'MASTERCARD' ? 'MasterCard' : str.toLowerCase().split(' ').map(function (i) {
