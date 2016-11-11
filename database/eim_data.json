@@ -58,29 +58,5 @@
         { "closingID" : 20, "name" : "PriceLine", "phone" : "(888) 769-6105", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "https://www.etravelprotection.com/priceline/"},
         { "closingID" : 21, "name" : "B2C", "phone" : "(866) 884-3556", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.allianztravelinsurance.com"},
         { "closingID" : 22, "name" : "CarRentals.com", "phone" : "(877) 413-2788", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "http://www.etravelprotection.com/CarRentals/"}       
-    ],
-    "Provider" : [
-        { "name" : "TicketMaster", "website" : "www.ticketmaster.com", "email" : "", "phone" : "(800) 653-8000" },
-        { "name" : "TicketNetwork", "website" : "www.ticketnetwork.com", "email" : "customerservice@ticketnetwork.com", "phone" : "(888) 456-8499" },
-        { "name" : "VividSeats", "website" : "www.vividseats.com/contact.html", "email" : "", "phone" : "(800) 501-9983" },
-        { "name" : "Delta ", "website" : "www.delta.com", "email" : "", "phone" : "(800) 221-1212" },
-        { "name" : "Kayak", "website" : "www.kayak.com/help", "email" : "", "phone" : "(855) 529-2501" },
-        { "name" : "CarRentals.com", "website" : "www.carrentals.com", "email" : "support@carrentals.com", "phone" : "(877) 477-7441" },
-        { "name" : "Alaska", "website" : "www.alaskaair.com/content/about-us/contact-us/phone-numbers", "email" : "", "phone" : "(800) 252-7522" },
-        { "name" : "Expedia", "website" : "www.expedia.com/service/", "email" : "", "phone" : "(800) 319-4834" },
-        { "name" : "AON Affinity", "website" : "www.aon.com", "email" : "travelprotect@aon.com", "phone" : "(888) 273-4698" },
-        { "name" : "Hawaiian Air", "website" : "www.hawaiianairlines.com/contact-us", "email" : "", "phone" : "(800) 367-5320" },
-        { "name" : "PriceLine", "website" : "www.priceline.com/help", "email" : "", "phone" : "(877) 477-5807" },
-        { "name" : "American Airlines", "website" : "www.aa.com", "email" : "", "phone" : "(800) 433-7300" },
-        { "name" : "United Airlines", "website" : "www.united.com/web/en-US/content/Contact/customer/default.aspx", "email" : "", "phone" : "(800) 864-8331" },
-        { "name" : "Jetblue", "website" : "http://www.jetblue.com/contact-us/", "email" : "", "phone" : "(801) 449-2525" }
-    ],
-    "International" : [
-        { "country" : "Argentina", "phone" : "+54 (11) 4311-0669", "email" : "contactenos@mondial-assistance.com.ar", "website" : "www.mondial-assistance.com.ar" },
-        { "country" : "Australia/NZ", "phone" : "+61 (07) 3305-7000", "email" : "www.assist@allianz-assistance.com.au", "website" : "www.allianz-assistance.com.au" },
-        { "country" : "Austria", "phone" : "+43 (15) 2503-9811", "email" : "", "website" : "www.allianz-assistance.com.at" },
-        { "country" : "Belgium", "phone" : "+32 2529-7670", "email" : "", "website" : "www.allianz-assistance.be" },
-        { "country" : "Brazil", "phone" : "www.mondialtravel.com.br", "email" : "faleconosco@mondialtravel.com.br", "website" : "www.mondialtravel.com.br" },
-        { "country" : "Bulgaria", "phone" : "+43 (15) 2503-9811", "email" : "", "website" : "" }
     ]
 }
