@@ -76,5 +76,13 @@
         { "name" : "American Airlines", "website" : "www.aa.com", "email" : "", "phone" : "(800) 433-7300" },
         { "name" : "United Airlines", "website" : "www.united.com/web/en-US/content/Contact/customer/default.aspx", "email" : "", "phone" : "(800) 864-8331" },
         { "name" : "Jetblue", "website" : "http://www.jetblue.com/contact-us/", "email" : "", "phone" : "(801) 449-2525" }
+    ],
+    "International" : [
+        { "country" : "Argentina", "phone" : "+54 (11) 4311-0669", "email" : "contactenos@mondial-assistance.com.ar", "website" : "www.mondial-assistance.com.ar" },
+        { "country" : "Australia/NZ", "phone" : "+61 (07) 3305-7000", "email" : "www.assist@allianz-assistance.com.au", "website" : "www.allianz-assistance.com.au" },
+        { "country" : "Austria", "phone" : "+43 (15) 2503-9811", "email" : "", "website" : "www.allianz-assistance.com.at" },
+        { "country" : "Belgium", "phone" : "+32 2529-7670", "email" : "", "website" : "www.allianz-assistance.be" },
+        { "country" : "Brazil", "phone" : "www.mondialtravel.com.br", "email" : "faleconosco@mondialtravel.com.br", "website" : "www.mondialtravel.com.br" },
+        { "country" : "Bulgaria", "phone" : "+43 (15) 2503-9811", "email" : "", "website" : "" }
     ]
 }
