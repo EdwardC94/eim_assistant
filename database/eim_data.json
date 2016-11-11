@@ -1,62 +1,408 @@
 {
-    "Template" : [
-        { "templateID" : 1, "name" : "Travel Gral. Info", "needs" : ["pN", "name", "email"], "url" : "email-templates/travel-gral-info.html" },
-        { "templateID" : 2, "name" : "ETP Gral. Info", "needs" : ["pN", "name", "email"], "url" : "email-templates/etp-gral-info.html" },
-        { "templateID" : 3, "name" : "ERP Gral. Info", "needs" : ["pN", "name", "email"], "url" : "email-templates/erp-gral-info.html" },
-        { "templateID" : 4, "name" : "CDW Benefits", "needs" : ["pN", "name"], "url" : "email-templates/cdw-benefits.html" },
-        { "templateID" : 5, "name" : "Not Covered", "needs" : ["pN", "name", "email"], "url" : "email-templates/not-covered.html" },
-        { "templateID" : 6, "name" : "Unintended Purchase ETP", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/unintended-purchase-etp.html" },
-        { "templateID" : 7, "name" : "Unintended Purchase ERP", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/unintended-purchase-erp.html" },
-        { "templateID" : 8, "name" : "Unintended Purchase Travel", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/unintended-purchase-travel.html" },
-        { "templateID" : 9, "name" : "Ten-Day SG ETP/ERP", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/ten-day-sg-etp-and-erp.html" },                
-        { "templateID" : 10, "name" : "Ten-Day SG Travel", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/ten-day-sg-etp-travel.html" },                
-        { "templateID" : 11, "name" : "Duplicate", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/duplicate.html" },                
-        { "templateID" : 12, "name" : "CDW Cancelation", "needs" : ["pN", "name", "amount", "brand", "l4d"], "url" : "email-templates/cdw-cancelation.html" },                
-        { "templateID" : 13, "name" : "No Action Specified", "needs" : ["pN", "name"], "url" : "email-templates/no-action-specified.html" },                
-        { "templateID" : 14, "name" : "Pre-existing", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/pre-existing.html" },                
-        { "templateID" : 15, "name" : "Already Canceled", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/already-canceled.html" },                
-        { "templateID" : 16, "name" : "Confirm Cancelation", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/confirm-cancelation.html" },                
-        { "templateID" : 17, "name" : "Customer Not Aware Of Duplicate", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/customer-not-aware-of-duplicate.html" },                
-        { "templateID" : 18, "name" : "Refund Timeframe", "needs" : ["pN", "name", "amount"], "url" : "email-templates/refund-timeframe.html" },                
-        { "templateID" : 19, "name" : "770 Event", "needs" : ["pN", "doP", "name"], "url" : "email-templates/seven-seventy-rule-event.html" },                
-        { "templateID" : 20, "name" : "770 Travel", "needs" : ["pN", "doP", "name"], "url" : "email-templates/seven-seventy-rule-travel.html" },                
-        { "templateID" : 21, "name" : "Unable To Locate Policy", "needs" : ["name"], "url" : "email-templates/unable-to-locate-policy.html" },                
-        { "templateID" : 22, "name" : "More Beneficial to Call", "needs" : ["pN", "name"], "url" : "email-templates/more-beneficial-to-call.html" },                
-        { "templateID" : 23, "name" : "Quote", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/quote.html" },                
-        { "templateID" : 24, "name" : "Change Request", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/change-request.html" },                
-        { "templateID" : 25, "name" : "Confirm Change of Dates", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/confirm-cod.html" },                
-        { "templateID" : 26, "name" : "No Change Needed", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/no-change-needed.html" },                
-        { "templateID" : 27, "name" : "Change Request TAS", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/change-request-tas.html" },                
-        { "templateID" : 28, "name" : "Add Driver", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/add-driver.html" },                
-        { "templateID" : 29, "name" : "Agent Services", "needs" : ["pN", "doP","depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"], "url" : "email-templates/agent-services.html" },                
-        { "templateID" : 30, "name" : "Rejected - CC", "needs" : ["pN", "name"], "url" : "email-templates/rejected-cc.html" },
-        { "templateID" : 31, "name" : "Resend Fulfillment", "needs" : ["pN", "name", "email"], "url" : "email-templates/resend-fulfillment-html" },
-        { "templateID" : 32, "name" : "FNOL - ETP", "needs" : ["pN", "name"], "url" : "email-templates/fnol-etp.html" },
-        { "templateID" : 33, "name" : "FNOL - TAO", "needs" : ["pN", "name"], "url" : "email-templates/fnol-tao.html" },
-        { "templateID" : 34, "name" : "Cancelled by Customer", "needs" : ["pN", "name", "amount"], "url" : "email-templates/cancelled-by-customer.html" }        
-        ],
-    "Closing" : [
-        { "closingID" : 1, "name" : "ETP/ERP Customer Service", "phone" : "(866) 456-3102", "email" : "eventservice@allianzassistance.com", "urlForClaims" : ""},
-        { "closingID" : 2, "name" : "ETP/ERP Claims", "phone" : "(888) 799-2832", "email" : "eventclaims@allianzassistance.com", "urlForClaims" : ""},
-        { "closingID" : 3, "name" : "Claims", "phone" : "(800) 729-6021", "email" : "claimsinquiry@allianzassistance.com", "urlForClaims" : ""},
-        { "closingID" : 4, "name" : "Air Lingus", "phone" : "(888) 817-2168", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/aerlingus"},
-        { "closingID" : 5, "name" : "Alaska Air", "phone" : "(800) 496-6593", "email" : "customerservice@allianzassistance.com", "urlForClaims" : " www.etravelprotection.com/alaska"},
-        { "closingID" : 6, "name" : "Gral. Customer Service", "phone" : "(800) 729-6021", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
-        { "closingID" : 7, "name" : "American Airlines", "phone" : "(800) 628-5404", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/aa"},
-        { "closingID" : 8, "name" : "Amtrak", "phone" : "(800) 390-3915", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/amtrak"},
-        { "closingID" : 9, "name" : "Cheap Tickets", "phone" : "(800) 269-9726", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/cheaptickets"},
-        { "closingID" : 10, "name" : "Delta", "phone" : "(800) 419-8016", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/delta"},
-        { "closingID" : 11, "name" : "HotWire", "phone" : "(800) 771-1281", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/hotwire"},
-        { "closingID" : 12, "name" : "Jet Blue", "phone" : "(800) 284-8300", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/jetblue"},
-        { "closingID" : 13, "name" : "Orbitz", "phone" : "(877) 593-4989", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/orbitz"},
-        { "closingID" : 14, "name" : "United", "phone" : "(866) 456-3104", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/UnitedAirlines"},
-        { "closingID" : 15, "name" : "US Air", "phone" : "(800) 496-6904", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/usairways"},
-        { "closingID" : 16, "name" : "Kayak", "phone" : "(866) 642-2501", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/kayak"},
-        { "closingID" : 17, "name" : "Hawaiian Airlines", "phone" : "(866) 681-6003", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.etravelprotection.com/hawaiianairlines"},
-        { "closingID" : 18, "name" : "Car Trawler", "phone" : "(800) 284-8300", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
-        { "closingID" : 19, "name" : "Silver Airways", "phone" : "(866) 680-9832", "email" : "customerservice@allianzassistance.com", "urlForClaims" : ""},
-        { "closingID" : 20, "name" : "PriceLine", "phone" : "(888) 769-6105", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "https://www.etravelprotection.com/priceline/"},
-        { "closingID" : 21, "name" : "B2C", "phone" : "(866) 884-3556", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "www.allianztravelinsurance.com"},
-        { "closingID" : 22, "name" : "CarRentals.com", "phone" : "(877) 413-2788", "email" : "customerservice@allianzassistance.com", "urlForClaims" : "http://www.etravelprotection.com/CarRentals/"}       
-    ]
+	"Template": [{
+		"templateID": 1,
+		"name": "Travel Gral. Info",
+		"needs": ["pN", "name", "email"],
+		"url": "email-templates/travel-gral-info.html"
+	}, {
+		"templateID": 2,
+		"name": "ETP Gral. Info",
+		"needs": ["pN", "name", "email"],
+		"url": "email-templates/etp-gral-info.html"
+	}, {
+		"templateID": 3,
+		"name": "ERP Gral. Info",
+		"needs": ["pN", "name", "email"],
+		"url": "email-templates/erp-gral-info.html"
+	}, {
+		"templateID": 4,
+		"name": "CDW Benefits",
+		"needs": ["pN", "name"],
+		"url": "email-templates/cdw-benefits.html"
+	}, {
+		"templateID": 5,
+		"name": "Not Covered",
+		"needs": ["pN", "name", "email"],
+		"url": "email-templates/not-covered.html"
+	}, {
+		"templateID": 6,
+		"name": "Unintended Purchase ETP",
+		"needs": ["pN", "name", "amount", "brand", "l4d"],
+		"url": "email-templates/unintended-purchase-etp.html"
+	}, {
+		"templateID": 7,
+		"name": "Unintended Purchase ERP",
+		"needs": ["pN", "name", "amount", "brand", "l4d"],
+		"url": "email-templates/unintended-purchase-erp.html"
+	}, {
+		"templateID": 8,
+		"name": "Unintended Purchase Travel",
+		"needs": ["pN", "name", "amount", "brand", "l4d"],
+		"url": "email-templates/unintended-purchase-travel.html"
+	}, {
+		"templateID": 9,
+		"name": "Ten-Day SG ETP/ERP",
+		"needs": ["pN", "name", "amount", "brand", "l4d"],
+		"url": "email-templates/ten-day-sg-etp-and-erp.html"
+	}, {
+		"templateID": 10,
+		"name": "Ten-Day SG Travel",
+		"needs": ["pN", "name", "amount", "brand", "l4d"],
+		"url": "email-templates/ten-day-sg-etp-travel.html"
+	}, {
+		"templateID": 11,
+		"name": "Duplicate",
+		"needs": ["pN", "name", "amount", "brand", "l4d"],
+		"url": "email-templates/duplicate.html"
+	}, {
+		"templateID": 12,
+		"name": "CDW Cancelation",
+		"needs": ["pN", "name", "amount", "brand", "l4d"],
+		"url": "email-templates/cdw-cancelation.html"
+	}, {
+		"templateID": 13,
+		"name": "No Action Specified",
+		"needs": ["pN", "name"],
+		"url": "email-templates/no-action-specified.html"
+	}, {
+		"templateID": 14,
+		"name": "Pre-existing",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/pre-existing.html"
+	}, {
+		"templateID": 15,
+		"name": "Already Canceled",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/already-canceled.html"
+	}, {
+		"templateID": 16,
+		"name": "Confirm Cancelation",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/confirm-cancelation.html"
+	}, {
+		"templateID": 17,
+		"name": "Customer Not Aware Of Duplicate",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/customer-not-aware-of-duplicate.html"
+	}, {
+		"templateID": 18,
+		"name": "Refund Timeframe",
+		"needs": ["pN", "name", "amount"],
+		"url": "email-templates/refund-timeframe.html"
+	}, {
+		"templateID": 19,
+		"name": "770 Event",
+		"needs": ["pN", "doP", "name"],
+		"url": "email-templates/seven-seventy-rule-event.html"
+	}, {
+		"templateID": 20,
+		"name": "770 Travel",
+		"needs": ["pN", "doP", "name"],
+		"url": "email-templates/seven-seventy-rule-travel.html"
+	}, {
+		"templateID": 21,
+		"name": "Unable To Locate Policy",
+		"needs": ["name"],
+		"url": "email-templates/unable-to-locate-policy.html"
+	}, {
+		"templateID": 22,
+		"name": "More Beneficial to Call",
+		"needs": ["pN", "name"],
+		"url": "email-templates/more-beneficial-to-call.html"
+	}, {
+		"templateID": 23,
+		"name": "Quote",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/quote.html"
+	}, {
+		"templateID": 24,
+		"name": "Change Request",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/change-request.html"
+	}, {
+		"templateID": 25,
+		"name": "Confirm Change of Dates",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/confirm-cod.html"
+	}, {
+		"templateID": 26,
+		"name": "No Change Needed",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/no-change-needed.html"
+	}, {
+		"templateID": 27,
+		"name": "Change Request TAS",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/change-request-tas.html"
+	}, {
+		"templateID": 28,
+		"name": "Add Driver",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/add-driver.html"
+	}, {
+		"templateID": 29,
+		"name": "Agent Services",
+		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"url": "email-templates/agent-services.html"
+	}, {
+		"templateID": 30,
+		"name": "Rejected - CC",
+		"needs": ["pN", "name"],
+		"url": "email-templates/rejected-cc.html"
+	}, {
+		"templateID": 31,
+		"name": "Resend Fulfillment",
+		"needs": ["pN", "name", "email"],
+		"url": "email-templates/resend-fulfillment-html"
+	}, {
+		"templateID": 32,
+		"name": "FNOL - ETP",
+		"needs": ["pN", "name"],
+		"url": "email-templates/fnol-etp.html"
+	}, {
+		"templateID": 33,
+		"name": "FNOL - TAO",
+		"needs": ["pN", "name"],
+		"url": "email-templates/fnol-tao.html"
+	}, {
+		"templateID": 34,
+		"name": "Cancelled by Customer",
+		"needs": ["pN", "name", "amount"],
+		"url": "email-templates/cancelled-by-customer.html"
+	}],
+	"Closing": [{
+		"closingID": 1,
+		"name": "ETP/ERP Customer Service",
+		"phone": "(866) 456-3102",
+		"email": "eventservice@allianzassistance.com",
+		"urlForClaims": ""
+	}, {
+		"closingID": 2,
+		"name": "ETP/ERP Claims",
+		"phone": "(888) 799-2832",
+		"email": "eventclaims@allianzassistance.com",
+		"urlForClaims": ""
+	}, {
+		"closingID": 3,
+		"name": "Claims",
+		"phone": "(800) 729-6021",
+		"email": "claimsinquiry@allianzassistance.com",
+		"urlForClaims": ""
+	}, {
+		"closingID": 4,
+		"name": "Air Lingus",
+		"phone": "(888) 817-2168",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/aerlingus"
+	}, {
+		"closingID": 5,
+		"name": "Alaska Air",
+		"phone": "(800) 496-6593",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": " www.etravelprotection.com/alaska"
+	}, {
+		"closingID": 6,
+		"name": "Gral. Customer Service",
+		"phone": "(800) 729-6021",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": ""
+	}, {
+		"closingID": 7,
+		"name": "American Airlines",
+		"phone": "(800) 628-5404",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/aa"
+	}, {
+		"closingID": 8,
+		"name": "Amtrak",
+		"phone": "(800) 390-3915",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/amtrak"
+	}, {
+		"closingID": 9,
+		"name": "Cheap Tickets",
+		"phone": "(800) 269-9726",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/cheaptickets"
+	}, {
+		"closingID": 10,
+		"name": "Delta",
+		"phone": "(800) 419-8016",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/delta"
+	}, {
+		"closingID": 11,
+		"name": "HotWire",
+		"phone": "(800) 771-1281",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/hotwire"
+	}, {
+		"closingID": 12,
+		"name": "Jet Blue",
+		"phone": "(800) 284-8300",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/jetblue"
+	}, {
+		"closingID": 13,
+		"name": "Orbitz",
+		"phone": "(877) 593-4989",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/orbitz"
+	}, {
+		"closingID": 14,
+		"name": "United",
+		"phone": "(866) 456-3104",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/UnitedAirlines"
+	}, {
+		"closingID": 15,
+		"name": "US Air",
+		"phone": "(800) 496-6904",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/usairways"
+	}, {
+		"closingID": 16,
+		"name": "Kayak",
+		"phone": "(866) 642-2501",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/kayak"
+	}, {
+		"closingID": 17,
+		"name": "Hawaiian Airlines",
+		"phone": "(866) 681-6003",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.etravelprotection.com/hawaiianairlines"
+	}, {
+		"closingID": 18,
+		"name": "Car Trawler",
+		"phone": "(800) 284-8300",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": ""
+	}, {
+		"closingID": 19,
+		"name": "Silver Airways",
+		"phone": "(866) 680-9832",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": ""
+	}, {
+		"closingID": 20,
+		"name": "PriceLine",
+		"phone": "(888) 769-6105",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "https://www.etravelprotection.com/priceline/"
+	}, {
+		"closingID": 21,
+		"name": "B2C",
+		"phone": "(866) 884-3556",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "www.allianztravelinsurance.com"
+	}, {
+		"closingID": 22,
+		"name": "CarRentals.com",
+		"phone": "(877) 413-2788",
+		"email": "customerservice@allianzassistance.com",
+		"urlForClaims": "http://www.etravelprotection.com/CarRentals/"
+	}],
+	"Provider": [{
+		"name": "TicketMaster",
+		"website": "www.ticketmaster.com",
+		"email": "",
+		"phone": "(800) 653-8000"
+	}, {
+		"name": "TicketNetwork",
+		"website": "www.ticketnetwork.com",
+		"email": "customerservice@ticketnetwork.com",
+		"phone": "(888) 456-8499"
+	}, {
+		"name": "VividSeats",
+		"website": "www.vividseats.com/contact.html",
+		"email": "",
+		"phone": "(800) 501-9983"
+	}, {
+		"name": "Delta ",
+		"website": "www.delta.com",
+		"email": "",
+		"phone": "(800) 221-1212"
+	}, {
+		"name": "Kayak",
+		"website": "www.kayak.com/help",
+		"email": "",
+		"phone": "(855) 529-2501"
+	}, {
+		"name": "CarRentals.com",
+		"website": "www.carrentals.com",
+		"email": "support@carrentals.com",
+		"phone": "(877) 477-7441"
+	}, {
+		"name": "Alaska",
+		"website": "www.alaskaair.com/content/about-us/contact-us/phone-numbers",
+		"email": "",
+		"phone": "(800) 252-7522"
+	}, {
+		"name": "Expedia",
+		"website": "www.expedia.com/service/",
+		"email": "",
+		"phone": "(800) 319-4834"
+	}, {
+		"name": "AON Affinity",
+		"website": "www.aon.com",
+		"email": "travelprotect@aon.com",
+		"phone": "(888) 273-4698"
+	}, {
+		"name": "Hawaiian Air",
+		"website": "www.hawaiianairlines.com/contact-us",
+		"email": "",
+		"phone": "(800) 367-5320"
+	}, {
+		"name": "PriceLine",
+		"website": "www.priceline.com/help",
+		"email": "",
+		"phone": "(877) 477-5807"
+	}, {
+		"name": "American Airlines",
+		"website": "www.aa.com",
+		"email": "",
+		"phone": "(800) 433-7300"
+	}, {
+		"name": "United Airlines",
+		"website": "www.united.com/web/en-US/content/Contact/customer/default.aspx",
+		"email": "",
+		"phone": "(800) 864-8331"
+	}, {
+		"name": "Jetblue",
+		"website": "http://www.jetblue.com/contact-us/",
+		"email": "",
+		"phone": "(801) 449-2525"
+	}],
+	"International": [{
+		"country": "Argentina",
+		"phone": "+54 (11) 4311-0669",
+		"email": "contactenos@mondial-assistance.com.ar",
+		"website": "www.mondial-assistance.com.ar"
+	}, {
+		"country": "Australia/NZ",
+		"phone": "+61 (07) 3305-7000",
+		"email": "www.assist@allianz-assistance.com.au",
+		"website": "www.allianz-assistance.com.au"
+	}, {
+		"country": "Austria",
+		"phone": "+43 (15) 2503-9811",
+		"email": "",
+		"website": "www.allianz-assistance.com.at"
+	}, {
+		"country": "Belgium",
+		"phone": "+32 2529-7670",
+		"email": "",
+		"website": "www.allianz-assistance.be"
+	}, {
+		"country": "Brazil",
+		"phone": "www.mondialtravel.com.br",
+		"email": "faleconosco@mondialtravel.com.br",
+		"website": "www.mondialtravel.com.br"
+	}, {
+		"country": "Bulgaria",
+		"phone": "+43 (15) 2503-9811",
+		"email": "",
+		"website": ""
+	}]
 }
