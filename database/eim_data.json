@@ -62,11 +62,9 @@
     "Provider" : [
         { "name" : "TicketMaster", "website" : "www.ticketmaster.com", "email" : "", "phone" : "(800) 653-8000" },
         { "name" : "TicketNetwork", "website" : "www.ticketnetwork.com", "email" : "customerservice@ticketnetwork.com", "phone" : "(888) 456-8499" },
-        { "name" : "VividSeats", "website" : "www.vividseats.com/contact.html", "email" : "", "phone" : "(800) 501-9983
-" },
+        { "name" : "VividSeats", "website" : "www.vividseats.com/contact.html", "email" : "", "phone" : "(800) 501-9983" },
         { "name" : "Delta ", "website" : "www.delta.com", "email" : "", "phone" : "(800) 221-1212" },
-        { "name" : "Kayak", "website" : "www.kayak.com/help", "email" : "", "phone" : "(855) 529-2501
-" },
+        { "name" : "Kayak", "website" : "www.kayak.com/help", "email" : "", "phone" : "(855) 529-2501" },
         { "name" : "CarRentals.com", "website" : "www.carrentals.com", "email" : "support@carrentals.com", "phone" : "(877) 477-7441" },
         { "name" : "Alaska", "website" : "www.alaskaair.com/content/about-us/contact-us/phone-numbers", "email" : "", "phone" : "(800) 252-7522" },
         { "name" : "Expedia", "website" : "www.expedia.com/service/", "email" : "", "phone" : "(800) 319-4834" },
