@@ -169,6 +169,11 @@
 		"name": "Cancelled by Customer",
 		"needs": ["pN", "name", "amount"],
 		"url": "email-templates/cancelled-by-customer.html"
+	}, {
+		"templateID": 35,
+		"name": "CDW — Partial Refund",
+		"needs": ["pN", "name"],
+		"url": "email-templates/cdw-partial-refund.html"
 	}],
 	"Closing": [{
 		"closingID": 1,
