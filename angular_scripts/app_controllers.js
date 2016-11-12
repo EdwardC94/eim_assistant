@@ -1,6 +1,7 @@
 (function (){
     function Policy() {
         this.pN = "";
+        this.duplicatePN = "";
         this.doP = "";
         this.depD = "";
         this.retD = "";
