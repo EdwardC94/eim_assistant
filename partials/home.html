@@ -103,6 +103,10 @@
                         <span class="input-group-addon glyphicon glyphicon-envelope"></span>
                         <input type="text" class="form-control" data-ng-model="data.pol.pH.email" placeholder="Email">
                     </div>
+                    <div ng-show="isNeeded('amountCov')" class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-usd"></span>
+                        <input type="text" class="form-control" data-ng-model="data.pol.amountCov" placeholder="Amount covered">
+                    </div>
                     <div ng-show="isNeeded('amount')" class="input-group">
                         <span class="input-group-addon glyphicon glyphicon-usd"></span>
                         <input type="text" class="form-control" data-ng-model="data.pol.payment.amount" placeholder="Amount refunded">
