@@ -77,7 +77,7 @@
 	}, {
 		"templateID": 16,
 		"name": "Confirm Cancelation",
-		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"needs": ["pN", "doP", "name"],
 		"url": "email-templates/confirm-cancelation.html"
 	}, {
 		"templateID": 17,
@@ -112,22 +112,22 @@
 	}, {
 		"templateID": 23,
 		"name": "Quote",
-		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"needs": ["name"],
 		"url": "email-templates/quote.html"
 	}, {
 		"templateID": 24,
 		"name": "Change Request",
-		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"needs": ["pN", "name"],
 		"url": "email-templates/change-request.html"
 	}, {
 		"templateID": 25,
 		"name": "Confirm Change of Dates",
-		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"needs": ["pN", "depD", "retD", "name", "email"],
 		"url": "email-templates/confirm-cod.html"
 	}, {
 		"templateID": 26,
 		"name": "No Change Needed",
-		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"needs": ["pN", "name"],
 		"url": "email-templates/no-change-needed.html"
 	}, {
 		"templateID": 27,
