@@ -78,7 +78,7 @@
 		"templateID": 16,
 		"name": "Confirm Cancelation",
 		"needs": ["pN", "doP", "name"],
-		"url": "email-templates/confirm-cancelation.html"
+		"url": "email-templates/confirm-cancellation.html"
 	}, {
 		"templateID": 17,
 		"name": "Customer Not Aware Of Duplicate",
