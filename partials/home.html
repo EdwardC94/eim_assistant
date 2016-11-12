@@ -79,6 +79,10 @@
                         <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                         <input type="text" class="form-control" data-ng-model="data.pol.doP" placeholder="Date of Purchase">
                     </div>
+                    <div ng-show="isNeeded('doC')" class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                        <input type="text" class="form-control" data-ng-model="data.pol.doC" placeholder="Date of Cancellation">
+                    </div>
                     <div ng-show="isNeeded('depD')" class="input-group">
                         <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                         <input type="text" class="form-control" data-ng-model="data.pol.depD" placeholder="Departure Date">
