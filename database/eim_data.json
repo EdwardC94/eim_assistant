@@ -132,7 +132,7 @@
 	}, {
 		"templateID": 27,
 		"name": "Change Request TAS",
-		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"needs": ["pN", "depD", "name"],
 		"url": "email-templates/change-request-tas.html"
 	}, {
 		"templateID": 28,
@@ -169,6 +169,16 @@
 		"name": "CDW — Partial Refund",
 		"needs": ["pN", "name"],
 		"url": "email-templates/cdw-partial-refund.html"
+	}, {
+		"templateID": 35,
+		"name": "Change Policyholder",
+		"needs": ["pN", "name"],
+		"url": "email-templates/change-policyholder.html"
+	}, {
+		"templateID": 36,
+		"name": "Premium decrease",
+		"needs": ["pN", "name", "email", "amount"],
+		"url": "email-templates/premium-decrease.html"
 	}],
 	"Closing": [{
 		"closingID": 1,
