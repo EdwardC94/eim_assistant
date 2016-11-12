@@ -6,6 +6,7 @@
         this.doC = "";
         this.depD = "";
         this.retD = "";
+        this.amountCov = "";
         this.pH = {"name" : "", "email" : "", "phone" : "", "address" : ""};
         this.payment = {"amount" : "", "brand" : "", "l4d" : ""};
     };
