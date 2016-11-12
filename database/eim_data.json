@@ -179,6 +179,11 @@
 		"name": "Premium decrease",
 		"needs": ["pN", "name", "email", "amount"],
 		"url": "email-templates/premium-decrease.html"
+	}, {
+		"templateID": 37,
+		"name": "Increase Coverage",
+		"needs": ["pN", "name", "email", "amount"],
+		"url": "email-templates/increase-coverage.html"
 	}],
 	"Closing": [{
 		"closingID": 1,
