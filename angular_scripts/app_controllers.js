@@ -3,6 +3,7 @@
         this.pN = "";
         this.duplicatePN = "";
         this.doP = "";
+        this.doC = "";
         this.depD = "";
         this.retD = "";
         this.pH = {"name" : "", "email" : "", "phone" : "", "address" : ""};
