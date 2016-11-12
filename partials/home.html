@@ -67,6 +67,10 @@
                         <span class="input-group-addon glyphicon glyphicon-book"></span>
                         <input type="text" class="form-control" data-ng-model="data.pol.pN" placeholder="Policy">
                     </div>
+                    <div ng-show="isNeeded('duplicatePN')" class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-book"></span>
+                        <input type="text" class="form-control" data-ng-model="data.pol.duplicatePN" placeholder="Duplicate Policy">
+                    </div>
                     <div ng-show="isNeeded('name')" class="input-group">
                         <span class="input-group-addon glyphicon glyphicon-user"></span>
                         <input type="text" class="form-control" data-ng-model="data.pol.pH.name" placeholder="Name">
