@@ -52,7 +52,7 @@
 	}, {
 		"templateID": 11,
 		"name": "Duplicate",
-		"needs": ["pN", "name", "amount", "brand", "l4d"],
+		"needs": ["pN", "name", "amount", "brand", "l4d", "duplicatePN"],
 		"url": "email-templates/duplicate.html"
 	}, {
 		"templateID": 12,
@@ -72,8 +72,8 @@
 	}, {
 		"templateID": 15,
 		"name": "Already Canceled",
-		"needs": ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
-		"url": "email-templates/already-canceled.html"
+		"needs": ["pN", "name", "email", "amount", "doC"],
+		"url": "email-templates/already-cancelled.html"
 	}, {
 		"templateID": 16,
 		"name": "Confirm Cancelation",
@@ -166,11 +166,6 @@
 		"url": "email-templates/fnol-tao.html"
 	}, {
 		"templateID": 34,
-		"name": "Cancelled by Customer",
-		"needs": ["pN", "name", "amount"],
-		"url": "email-templates/cancelled-by-customer.html"
-	}, {
-		"templateID": 35,
 		"name": "CDW — Partial Refund",
 		"needs": ["pN", "name"],
 		"url": "email-templates/cdw-partial-refund.html"
