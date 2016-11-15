@@ -16,7 +16,8 @@
                 <div class="panel-body">
                     <div class="input-group">
                         <span class="input-group-addon glyphicon glyphicon-user"></span>
-                        <input type="text" class="form-control" data-ng-model="session.user" placeholder="Enter your name, please" ng-keyup="isValid($event.keyCode)">
+                        <input type="text" class="form-control" data-ng-model="session.user" placeholder="Enter your name, please" ng-keyup="isValid($event.keyCode)"
+                            autofocus>
                     </div>
                     <p>{{session.errorMessage}}
                         <p>
@@ -58,6 +59,10 @@
 
             <!--This lets you select the right closing-->
             <select class="panel-heading" data-ng-options="option.name for option in select.Closing | orderBy:'name' track by option.closingID"
+                data-ng-model="data.message.closing"></select>
+
+            <!--This lets you select the right provider-->
+            <select class="panel-heading" data-ng-options="option.name for option in select.Provider | orderBy:'name' track by option.providerID"
                 data-ng-model="data.message.closing"></select>
 
             <!--This lets you enter the information that will be displayed in the response.-->
@@ -168,7 +173,7 @@
                 </div>
                 <div id="email-response" class="panel-body">
                     <p>Dear <span data-ng-show="data.pol.pH.name">{{toTitleCase(data.pol.pH.name)}}</span><span data-ng-hide="data.pol.pH.name">Valued Customer</span></p>
-                    <p data-ng-show="data.pol.pN">Policy {{data.pol.pN}}</p>                    
+                    <p data-ng-show="data.pol.pN">Policy {{data.pol.pN}}</p>
                     <p data-ng-show="data.claim.claimN">Claim {{data.claim.claimN}}</p>
                     <div class="response-body" data-ng-include="data.message.template.url"></div>
                     <div class="response-closing" data-ng-include="'partials/closing.html'"></div>
