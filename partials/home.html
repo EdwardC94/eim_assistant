@@ -54,16 +54,13 @@
     <div class="row" data-ng-if="session.valid" data-ng-cloak>
         <div class="col-xs-12 col-sm-6 col-md-4">
             <!--This lets you choose what type of e-mail you are answering to.-->
-            <select class="panel-heading" data-ng-options="option.name for option in select.Template | orderBy:'name' track by option.templateID"
-                data-ng-model="data.message.template"></select>
+            <select class="panel-heading" data-ng-options="option.name for option in select.Template | orderBy:'name' track by option.templateID" data-ng-model="data.message.template"></select>
 
             <!--This lets you select the right closing-->
-            <select class="panel-heading" data-ng-options="option.name for option in select.Closing | orderBy:'name' track by option.closingID"
-                data-ng-model="data.message.closing"></select>
+            <select class="panel-heading" data-ng-options="option.name for option in select.Closing | orderBy:'name' track by option.closingID" data-ng-model="data.message.closing"></select>
 
             <!--This lets you select the right provider-->
-            <select class="panel-heading" data-ng-options="option.name for option in select.Provider | orderBy:'name' track by option.providerID"
-                data-ng-model="data.message.closing"></select>
+            <select class="panel-heading" data-ng-options="option.name for option in select.Provider | orderBy:'name' track by option.providerID" data-ng-model="data.message.provider" data-ng-show="data.message.template.templateID == 46"></select>
 
             <!--This lets you enter the information that will be displayed in the response.-->
             <div class="panel panel-default">
