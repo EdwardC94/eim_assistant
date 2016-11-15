@@ -67,3 +67,12 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+.my-input-section {
+    margin : 1rem 0; 
+}
+.mis-title {
+    margin-bottom: 0.5rem;
+    color: #013781;
+    font-size: 1.5rem;
+    font-weight: 600;
+}

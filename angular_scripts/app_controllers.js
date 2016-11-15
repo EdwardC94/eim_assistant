@@ -15,7 +15,13 @@
         this.closing = closing;
         this.empathy_statement = empathy_statement;
     };
-
+    function Claim() {
+            this.filedD = '';
+            this.incD = '';
+            this.amountClaimed = '';
+            this.status = '';
+            this.statusReason = '';
+    };
     angular.module('EIMCtrls', ['ngRoute']).
     controller("MainCtrl", ['$scope', 'data', function($scope, data) {
         $scope.select = data;
@@ -30,7 +36,7 @@
             window.getSelection().removeAllRanges();
         };
         $scope.clear = function() {
-            $scope.data = {"pol" : new Policy(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
+            $scope.data = {"pol" : new Policy(), "claim" : new Claim(), "message" : new Reply($scope.select.Template[0], $scope.select.Closing[0], "")};
         };
         $scope.isNeeded = function(fieldName) {
             var needs  = $scope.data.message.template.needs;
