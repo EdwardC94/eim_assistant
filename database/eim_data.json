@@ -67,7 +67,7 @@
 	}, {
 		"templateID" : 14,
 		"name" : "Pre-existing",
-		"needs" : ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
+		"needs" : ["pN", "name"],
 		"url" : "email-templates/pre-existing.html"
 	}, {
 		"templateID" : 15,
@@ -79,11 +79,6 @@
 		"name" : "Confirm Cancelation",
 		"needs" : ["pN", "doP", "name"],
 		"url" : "email-templates/confirm-cancellation.html"
-	}, {
-		"templateID" : 17,
-		"name" : "Customer Not Aware Of Duplicate",
-		"needs" : ["pN", "doP", "depD", "retD", "name", "email", "phone", "address", "amount", "brand", "l4d"],
-		"url" : "email-templates/customer-not-aware-of-duplicate.html"
 	}, {
 		"templateID" : 18,
 		"name" : "Refund Timeframe",
@@ -219,6 +214,11 @@
 		"name" : "Rejected NAS",
 		"needs" : ["pN", "name"],
 		"url" : "email-templates/rejected-nas.html"
+	}, {
+		"templateID" : 45,
+		"name" : "Activate Rejected Policy",
+		"needs" : ["pN", "name"],
+		"url" : "email-templates/activate-rejected-policy.html"
 	}],
 	"Closing" : [{
 		"closingID" : 1,
