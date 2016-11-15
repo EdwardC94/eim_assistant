@@ -148,7 +148,7 @@
 		"templateID" : 31,
 		"name" : "Resend Fulfillment",
 		"needs" : ["pN", "name", "email"],
-		"url" : "email-templates/resend-fulfillment-html"
+		"url" : "email-templates/resend-fulfillment.html"
 	}, {
 		"templateID" : 32,
 		"name" : "FNOL - ETP",
