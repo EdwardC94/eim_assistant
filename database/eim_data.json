@@ -219,6 +219,11 @@
 		"name" : "Activate Rejected Policy",
 		"needs" : ["pN", "name"],
 		"url" : "email-templates/activate-rejected-policy.html"
+	}, {
+		"templateID" : 46,
+		"name" : "Contact Provider",
+		"needs" : ["pN", "name"],
+		"url" : "email-templates/contact-provider.html"
 	}],
 	"Closing" : [{
 		"closingID" : 1,
