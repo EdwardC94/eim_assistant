@@ -184,6 +184,16 @@
 		"name": "Increase Coverage",
 		"needs": ["pN", "name", "email", "amount"],
 		"url": "email-templates/increase-coverage.html"
+	}, {
+		"templateID": 38,
+		"name": "Claim Status",
+		"needs": ["claimN", "name", "status", "statusReason"],
+		"url": "email-templates/claim-status.html"
+	}, {
+		"templateID": 39,
+		"name": "Claim Withdrawal",
+		"needs": ["claimN", "name"],
+		"url": "email-templates/claim-withdrawal.html"
 	}],
 	"Closing": [{
 		"closingID": 1,

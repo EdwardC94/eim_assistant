@@ -124,6 +124,10 @@
                     </div>
                     <div class="my-input-section" ng-show="isNeeded('filedD') || isNeeded('incD') || isNeeded('amountClaimed') || isNeeded('status') || isNeeded('statusReason')">
                         <div class="mis-title">Claim Information</div>
+                        <div ng-show="isNeeded('claimN')" class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-book"></span>
+                            <input type="text" class="form-control" data-ng-model="data.claim.claimN" placeholder="Claim">
+                        </div>
                         <div ng-show="isNeeded('filedD')" class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                             <input type="text" class="form-control" data-ng-model="data.claim.filedD" placeholder="Filed Date">
@@ -164,7 +168,8 @@
                 </div>
                 <div id="email-response" class="panel-body">
                     <p>Dear <span data-ng-show="data.pol.pH.name">{{toTitleCase(data.pol.pH.name)}}</span><span data-ng-hide="data.pol.pH.name">Valued Customer</span></p>
-                    <p data-ng-show="data.pol.pN">Policy {{data.pol.pN}}</p>
+                    <p data-ng-show="data.pol.pN">Policy {{data.pol.pN}}</p>                    
+                    <p data-ng-show="data.claim.claimN">Claim {{data.claim.claimN}}</p>
                     <div class="response-body" data-ng-include="data.message.template.url"></div>
                     <div class="response-closing" data-ng-include="'partials/closing.html'"></div>
                 </div>
