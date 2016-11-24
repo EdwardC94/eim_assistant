@@ -8,12 +8,15 @@ body {
     background-clip : content-box;
 }
     .branding > .col-xs-4 {
-        padding-top : 21px;
+        padding-top: 8px;
         height : 20px;
     }
     .branding img {        
         width: 103.328px;
         float: right;
+    }
+    .branding h2 {
+    margin: 8px 0 8px 0;
     }
 .panel-heading {
     background-image: linear-gradient(to bottom,#1d6e86 0,#013781 100%) !important;
