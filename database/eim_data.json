@@ -344,7 +344,7 @@
 		"name" : "PriceLine",
 		"phone" : "(888) 769-6105",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "https ://www.etravelprotection.com/priceline/"
+		"urlForClaims" : "https://www.etravelprotection.com/priceline/"
 	}, {
 		"closingID" : 21,
 		"name" : "B2C",
@@ -356,7 +356,7 @@
 		"name" : "CarRentals.com",
 		"phone" : "(877) 413-2788",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "http ://www.etravelprotection.com/CarRentals/"
+		"urlForClaims" : "http://www.etravelprotection.com/CarRentals/"
 	}],
 	"Provider" : [{
 		"providerID" : 1,
@@ -439,7 +439,7 @@
 	}, {
 		"providerID" : 14,
 		"name" : "Jetblue",
-		"website" : "http ://www.jetblue.com/contact-us/",
+		"website" : "http://www.jetblue.com/contact-us/",
 		"email" : "",
 		"phone" : "(801) 449-2525"
 	}],
