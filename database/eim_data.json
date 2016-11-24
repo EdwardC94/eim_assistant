@@ -196,7 +196,7 @@
 		"url" : "email-templates/claim-appeals.html"
 	}, {
 		"templateID" : 41,
-		"name" : "Claim Appeals",
+		"name" : "Additional Claims",
 		"needs" : ["claimN", "name"],
 		"url" : "email-templates/additional-claims.html"
 	}, {
