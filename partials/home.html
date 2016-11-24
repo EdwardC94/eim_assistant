@@ -122,11 +122,11 @@
                     </div>
                     <div ng-show="isNeeded('l4d')" class="input-group">
                         <span class="input-group-addon glyphicon glyphicon-triangle-right"></span>
-                        <input type="number" class="form-control" data-ng-model="data.pol.payment.l4d" placeholder="Last four digits">
+                        <input type="text" class="form-control" data-ng-model="data.pol.payment.l4d" placeholder="Last four digits">
                     </div>
-                    <div class="my-input-section" ng-show="isNeeded('filedD') || isNeeded('incD') || isNeeded('amountClaimed') || isNeeded('status') || isNeeded('statusReason')">
+                    <div class="my-input-section" ng-show="isNeeded('claimN')">
                         <div class="mis-title">Claim Information</div>
-                        <div ng-show="isNeeded('claimN')" class="input-group">
+                        <div class="input-group">
                             <span class="input-group-addon glyphicon glyphicon-book"></span>
                             <input type="text" class="form-control" data-ng-model="data.claim.claimN" placeholder="Claim">
                         </div>

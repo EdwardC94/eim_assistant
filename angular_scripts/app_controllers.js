@@ -40,6 +40,9 @@
             $scope.clear = function () {
                 $scope.data = { "pol": new Policy(), "claim": new Claim(), "message": new Reply($scope.select.Template[0], $scope.select.Closing[0], "", $scope.select.Provider[0]) };
             };
+            $scope.removeNotNumbers = function(str) {
+                return str.toString().replace(/[^0-9]/g, '');
+            };
             $scope.isNeeded = function (fieldName) {
                 var needs = $scope.data.message.template.needs;
                 return needs.findIndex(function (prop) { return prop === fieldName }) > -1;
