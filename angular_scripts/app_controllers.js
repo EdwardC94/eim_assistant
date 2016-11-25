@@ -10,11 +10,12 @@
         this.pH = { "name": "", "email": "", "phone": "", "address": "" };
         this.payment = { "amount": "", "brand": "", "l4d": "" };
     };
-    function Reply(template, closing, empathy_statement, provider) {
+    function Reply(template, closing, empathy_statement, provider, international) {
         this.template = template;
         this.closing = closing;
         this.empathy_statement = empathy_statement;
         this.provider = provider;
+        this.international = international;
     };
     function Claim() {
         this.claimN = "";
@@ -27,7 +28,7 @@
     angular.module('EIMCtrls', ['ngRoute']).
         controller("MainCtrl", ['$scope', 'data', function ($scope, data) {
             $scope.select = data;
-            $scope.data = { "pol": new Policy(), "claim": new Claim(), "message": new Reply($scope.select.Template[0], $scope.select.Closing[0], "", $scope.select.Provider[0]) };
+            $scope.data = { "pol": new Policy(), "claim": new Claim(), "message": new Reply($scope.select.Template[0], $scope.select.Closing[0], "", $scope.select.Provider[0], $scope.select.International[0]) };
             $scope.copy = function () {
                 var referenceNode = document.querySelector("#email-response");
                 var range = document.createRange();
@@ -38,7 +39,7 @@
                 window.getSelection().removeAllRanges();
             };
             $scope.clear = function () {
-                $scope.data = { "pol": new Policy(), "claim": new Claim(), "message": new Reply($scope.select.Template[0], $scope.select.Closing[0], "", $scope.select.Provider[0]) };
+                $scope.data = { "pol": new Policy(), "claim": new Claim(), "message": new Reply($scope.select.Template[0], $scope.select.Closing[0], "", $scope.select.Provider[0], $scope.select.International[0]) };
             };
             $scope.removeNotNumbers = function(str) {
                 return str.toString().replace(/[^0-9]/g, '');
