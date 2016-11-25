@@ -444,34 +444,36 @@
 		"phone" : "(801) 449-2525"
 	}],
 	"International" : [{
-		"country" : "Argentina",
-		"phone" : "+54 (11) 4311-0669",
-		"email" : "contactenos@mondial-assistance.com.ar",
-		"website" : "www.mondial-assistance.com.ar"
+		"countryID" : "1",
+		"country" : "Canada",
+		"tollFree" : "1-877-704-0266",
+		"collect" : "1-519-742-1691",
+		"email" : "claims@allianz-assistance.ca",
+		"website" : "https://allianzassistanceclaims.ca/",
+		"Address", "Allianz Global Assistance Claims Department, PO Box 277, Waterloo, ON, N2J 4A4, Canada"
 	}, {
-		"country" : "Australia/NZ",
-		"phone" : "+61 (07) 3305-7000",
-		"email" : "www.assist@allianz-assistance.com.au",
-		"website" : "www.allianz-assistance.com.au"
+		"countryID" : "2",
+		"country" : "The UK",
+		"tollFree" : "020 8603 9958",
+		"collect" : "",
+		"email" : "travel.claims@allianz-assistance.co.uk",
+		"website" : "www.azgatravelclaims.com",
+		"Address", "Allianz Global Assistance Travel Insurance Claims, PO Box 451, Feltham, TW13 9EE"
 	}, {
-		"country" : "Austria",
-		"phone" : "+43 (15) 2503-9811",
-		"email" : "",
-		"website" : "www.allianz-assistance.com.at"
+		"countryID" : "3",
+		"country" : "Germany",
+		"tollFree" : "+49.89.62424-460",
+		"collect" : "",
+		"email" : "service@allianz-assistance.de",
+		"website" : "www.allianz-reiseversicherung.de",
+		"Address", ""
 	}, {
-		"country" : "Belgium",
-		"phone" : "+32 2529-7670",
-		"email" : "",
-		"website" : "www.allianz-assistance.be"
-	}, {
-		"country" : "Brazil",
-		"phone" : "www.mondialtravel.com.br",
-		"email" : "faleconosco@mondialtravel.com.br",
-		"website" : "www.mondialtravel.com.br"
-	}, {
-		"country" : "Bulgaria",
-		"phone" : "+43 (15) 2503-9811",
-		"email" : "",
-		"website" : ""
+		"countryID" : "4",
+		"country" : "Australia",
+		"tollFree" : "+49.89.62424-460",
+		"collect" : "+61 7 3305 7499",
+		"email" : "service@allianz-assistance.de",
+		"website" : "allianztravel@allianz-assistance.com.au",
+		"Address", "PO Box 162, Toowong Qld 4066, Australia"
 	}]
 }
