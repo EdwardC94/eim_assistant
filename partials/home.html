@@ -172,7 +172,7 @@
                 </div>
                 <div id="email-response" class="panel-body">
                     <p>Dear <span data-ng-show="data.pol.pH.name">{{toTitleCase(data.pol.pH.name)}},</span><span data-ng-hide="data.pol.pH.name">Valued Customer,</span></p>
-                    <p data-ng-show="data.pol.pN && !data.claim.claimN">Policy {{toTitleCase(data.pol.pN)}}</p>
+                    <p data-ng-show="data.pol.pN && !data.claim.claimN">Policy {{data.pol.pN.toString().toUpperCase()}}</p>
                     <p data-ng-show="data.claim.claimN && !data.pol.pN">Claim {{data.claim.claimN}}</p>
                     <div class="response-body" data-ng-include="data.message.template.url"></div>
                     <div class="response-closing" data-ng-include="'partials/closing.html'"></div>
