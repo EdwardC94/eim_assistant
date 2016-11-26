@@ -19,11 +19,10 @@
                         <input type="text" class="form-control" data-ng-model="session.user" placeholder="Enter your name, please" ng-keyup="isValid($event.keyCode)"
                             autofocus>
                     </div>
-                    <p>{{session.errorMessage}}
-                        <p>
-                            <div id="validation-form-submit">
-                                <button class="btn btn-success" data-ng-click="isValid(13)">Submit</button>
-                            </div>
+                    <p>{{session.errorMessage}}</p>
+                    <div id="validation-form-submit">
+                        <button class="btn btn-success" data-ng-click="isValid(13)">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,6 +57,9 @@
 
             <!--This lets you select the right provider-->
             <select class="panel-heading" data-ng-options="option.name for option in select.Provider | orderBy:'name' track by option.providerID" data-ng-model="data.message.provider" data-ng-show="data.message.template.templateID == 46"></select>
+            
+            <!--This lets you select the country for this customer-->
+            <select class="panel-heading" data-ng-options="option.country for option in select.International | orderBy:'country' track by option.countryID" data-ng-model="data.message.international" data-ng-show="data.message.template.templateID == 46"></select>
 
             <!--This lets you select the right closing-->
             <select class="panel-heading" data-ng-options="option.name for option in select.Closing | orderBy:'name' track by option.closingID" data-ng-model="data.message.closing"></select>
