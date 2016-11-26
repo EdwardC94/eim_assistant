@@ -224,6 +224,11 @@
 		"name" : "Contact Provider",
 		"needs" : ["pN", "name"],
 		"url" : "email-templates/contact-provider.html"
+	}, {
+		"templateID" : 47,
+		"name" : "International",
+		"needs" : ["pN", "name"],
+		"url" : "email-templates/international.html"
 	}],
 	"Closing" : [{
 		"closingID" : 1,
@@ -450,7 +455,7 @@
 		"collect" : "1-519-742-1691",
 		"email" : "claims@allianz-assistance.ca",
 		"website" : "https://allianzassistanceclaims.ca/",
-		"Address" : "Allianz Global Assistance Claims Department, PO Box 277, Waterloo, ON, N2J 4A4, Canada"
+		"address" : "Allianz Global Assistance Claims Department, PO Box 277, Waterloo, ON, N2J 4A4, Canada"
 	}, {
 		"countryID" : "2",
 		"country" : "The UK",
@@ -458,7 +463,7 @@
 		"collect" : "",
 		"email" : "travel.claims@allianz-assistance.co.uk",
 		"website" : "www.azgatravelclaims.com",
-		"Address" : "Allianz Global Assistance Travel Insurance Claims, PO Box 451, Feltham, TW13 9EE"
+		"address" : "Allianz Global Assistance Travel Insurance Claims, PO Box 451, Feltham, TW13 9EE"
 	}, {
 		"countryID" : "3",
 		"country" : "Germany",
@@ -466,7 +471,7 @@
 		"collect" : "",
 		"email" : "service@allianz-assistance.de",
 		"website" : "www.allianz-reiseversicherung.de",
-		"Address" : ""
+		"address" : ""
 	}, {
 		"countryID" : "4",
 		"country" : "Australia",
@@ -474,6 +479,6 @@
 		"collect" : "+61 7 3305 7499",
 		"email" : "service@allianz-assistance.de",
 		"website" : "allianztravel@allianz-assistance.com.au",
-		"Address" : "PO Box 162, Toowong Qld 4066, Australia"
+		"address" : "PO Box 162, Toowong Qld 4066, Australia"
 	}]
 }
