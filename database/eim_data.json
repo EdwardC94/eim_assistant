@@ -244,6 +244,16 @@
 		"name" : "Do Not Cancel",
 		"needs" : ["pN", "name"],
 		"url" : "email-templates/do-not-cancel.html"
+	}, {
+		"templateID" : 51,
+		"name" : "Not a US Resident - Active",
+		"needs" : ["pN", "name"],
+		"url" : "email-templates/nur-active-policy.html"
+	}, {
+		"templateID" : 52,
+		"name" : "Not a US Resident - Purchase",
+		"needs" : ["pN", "name"],
+		"url" : "email-templates/nur-purchase.html"
 	}],
 	"Closing" : [{
 		"closingID" : 1,
@@ -325,7 +335,7 @@
 		"urlForClaims" : "https://www.etravelprotection.com/orbitz"
 	}, {
 		"closingID" : 14,
-		"name" : "United",
+		"name" : "United Airlines",
 		"phone" : "(866) 456-3104",
 		"email" : "customerservice@allianzassistance.com",
 		"urlForClaims" : "https://www.etravelprotection.com/UnitedAirlines"
