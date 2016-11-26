@@ -31,8 +31,8 @@ select.panel-heading {
     font-size: 16px;
     background-color: #9ea2a3;
 }
-.reponse-body p {
-	content : "&nbsp&nbsp&nbsp&nbsp";	
+.reponse-body p:before {
+    content : "&nbsp&nbsp&nbsp&nbsp";	
 }
 #response-box-title > h3 {
     float : left;
