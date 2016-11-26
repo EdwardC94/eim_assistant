@@ -7,7 +7,7 @@
 	}, {
 		"templateID" : 2,
 		"name" : "ETP Gral. Info",
-		"needs" : ["pN", "name", "email"],
+		"needs" : ["pN", "name", "email", "amount"],
 		"url" : "email-templates/etp-gral-info.html"
 	}, {
 		"templateID" : 3,
@@ -48,7 +48,7 @@
 		"templateID" : 10,
 		"name" : "Ten-Day SG Travel",
 		"needs" : ["pN", "name", "amount", "brand", "l4d"],
-		"url" : "email-templates/ten-day-sg-etp-travel.html"
+		"url" : "email-templates/ten-day-sg-travel.html"
 	}, {
 		"templateID" : 11,
 		"name" : "Duplicate",
@@ -226,16 +226,31 @@
 		"url" : "email-templates/contact-provider.html"
 	}, {
 		"templateID" : 47,
-		"name" : "International",
+		"name" : "Non USA Policy",
 		"needs" : ["pN", "name"],
-		"url" : "email-templates/international.html"
+		"url" : "email-templates/non-usa-policy.html"
+	}, {
+		"templateID" : 48,
+		"name" : "FNOL - ERP",
+		"needs" : ["pN", "name"],
+		"url" : "email-templates/fnol-erp.html"
+	}, {
+		"templateID" : 49,
+		"name" : "FNOL - Priceline",
+		"needs" : ["pN", "name"],
+		"url" : "email-templates/fnol-priceline.html"
+	}, {
+		"templateID" : 50,
+		"name" : "Do Not Cancel",
+		"needs" : ["pN", "name"],
+		"url" : "email-templates/do-not-cancel.html"
 	}],
 	"Closing" : [{
 		"closingID" : 1,
 		"name" : "ETP/ERP Customer Service",
 		"phone" : "(866) 456-3102",
 		"email" : "eventservice@allianzassistance.com",
-		"urlForClaims" : ""
+		"urlForClaims" : "https://www.eventticketprotection.com"
 	}, {
 		"closingID" : 2,
 		"name" : "ETP/ERP Claims",
@@ -250,16 +265,16 @@
 		"urlForClaims" : ""
 	}, {
 		"closingID" : 4,
-		"name" : "Air Lingus",
+		"name" : "Aer Lingus",
 		"phone" : "(888) 817-2168",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/aerlingus"
+		"urlForClaims" : "https://www.etravelprotection.com/aerlingus"
 	}, {
 		"closingID" : 5,
 		"name" : "Alaska Air",
 		"phone" : "(800) 496-6593",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : " www.etravelprotection.com/alaska"
+		"urlForClaims" : " https://www.etravelprotection.com/alaska"
 	}, {
 		"closingID" : 6,
 		"name" : "Gral. Customer Service",
@@ -271,67 +286,67 @@
 		"name" : "American Airlines",
 		"phone" : "(800) 628-5404",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/aa"
+		"urlForClaims" : "https://www.etravelprotection.com/aa"
 	}, {
 		"closingID" : 8,
 		"name" : "Amtrak",
 		"phone" : "(800) 390-3915",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/amtrak"
+		"urlForClaims" : "https://www.etravelprotection.com/amtrak"
 	}, {
 		"closingID" : 9,
 		"name" : "Cheap Tickets",
 		"phone" : "(800) 269-9726",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/cheaptickets"
+		"urlForClaims" : "https://www.etravelprotection.com/cheaptickets"
 	}, {
 		"closingID" : 10,
 		"name" : "Delta",
 		"phone" : "(800) 419-8016",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/delta"
+		"urlForClaims" : "https://www.etravelprotection.com/deltaUsa"
 	}, {
 		"closingID" : 11,
 		"name" : "HotWire",
 		"phone" : "(800) 771-1281",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/hotwire"
+		"urlForClaims" : "https://www.etravelprotection.com/hotwire"
 	}, {
 		"closingID" : 12,
 		"name" : "Jet Blue",
 		"phone" : "(800) 284-8300",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/jetblue"
+		"urlForClaims" : "https://www.etravelprotection.com/jetblue"
 	}, {
 		"closingID" : 13,
 		"name" : "Orbitz",
 		"phone" : "(877) 593-4989",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/orbitz"
+		"urlForClaims" : "https://www.etravelprotection.com/orbitz"
 	}, {
 		"closingID" : 14,
 		"name" : "United",
 		"phone" : "(866) 456-3104",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/UnitedAirlines"
+		"urlForClaims" : "https://www.etravelprotection.com/UnitedAirlines"
 	}, {
 		"closingID" : 15,
 		"name" : "US Air",
 		"phone" : "(800) 496-6904",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/usairways"
+		"urlForClaims" : "https://www.etravelprotection.com/usairways"
 	}, {
 		"closingID" : 16,
 		"name" : "Kayak",
 		"phone" : "(866) 642-2501",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/kayak"
+		"urlForClaims" : "https://www.etravelprotection.com/kayak"
 	}, {
 		"closingID" : 17,
 		"name" : "Hawaiian Airlines",
 		"phone" : "(866) 681-6003",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.etravelprotection.com/hawaiianairlines"
+		"urlForClaims" : "https://www.etravelprotection.com/hawaiianairlines"
 	}, {
 		"closingID" : 18,
 		"name" : "Car Trawler",
@@ -355,13 +370,13 @@
 		"name" : "B2C",
 		"phone" : "(866) 884-3556",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "www.allianztravelinsurance.com"
+		"urlForClaims" : "https://www.allianztravelinsurance.com"
 	}, {
 		"closingID" : 22,
 		"name" : "CarRentals.com",
 		"phone" : "(877) 413-2788",
 		"email" : "customerservice@allianzassistance.com",
-		"urlForClaims" : "http://www.etravelprotection.com/CarRentals/"
+		"urlForClaims" : "https://www.etravelprotection.com/CarRentals/"
 	}],
 	"Provider" : [{
 		"providerID" : 1,
